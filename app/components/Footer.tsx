@@ -1,0 +1,105 @@
+import Link from "next/link";
+
+const footerTexts = {
+    logo: "/assets/logomark.svg",
+    buttonImg: [
+      { id: 1, name: "apple", img: "/assets/appstore.svg", href: "#" },
+      { id: 2, name: "google", img: "/assets/playstore.svg", href: "#" }
+    ],
+    stayInTheLoop: "Stay in the loop",
+    mailingList: "Join our mailing list and stay up to date on features and product updates.",
+    subscribe: "Subscribe",
+    privacyPolicy: "Privacy Policy",
+    company: "Menu",
+    companyItems: [
+      { text: "About us", href: "#" },
+      { text: "Blog", href: "#" },
+      { text: "Careers", href: "#" },
+      { text: "Security", href: "#" },
+      { text: "Newsroom", href: "#" },
+    ],
+    product: "Services",
+    productItems: [
+      { text: "Product Design", href: "#" },
+      { text: "Web Design", href: "#" },
+      { text: "Web Development", href: "#" },
+      { text: "Mobile App Development", href: "#" },
+      { text: "Branding", href: "#" },
+
+    ],
+    social: "Social",
+    socials: [
+      { text: "Dribbble", href: "#" },
+      { text: "LinkedIn", href: "#" },
+      { text: "Instagram", href: "#" },
+      { text: "Twitter", href: "#" },
+      { text: "Facebook", href: "#" }
+    ],
+
+    footerNote: "© 2025 Quadplan. All rights reserved.",
+    info: "Specializes in innovative product development strategies, creativity and data-driven insights to elevate your brand's online presence, and drive measurable growth."
+  };
+
+const Footer = () => {
+    return (
+        <div className="space-y-12 flex flex-col justify-center items-center px-24">
+            <div className="w-full flex justify-between lk:flex-col lk:space-y-12">
+                <div className="w-[35%] lk:w-full">
+                    <div className="space-y-6">
+                        <img src="/assets/quadplan.svg" alt="logo" className="h-6 w-auto" />
+                        <p className="text-white text-base font-norml">
+                            {footerTexts.info}
+                        </p>
+                    </div>
+                </div>
+                <div className="w-[45%] flex justify-end lk:w-full">
+                    <section className="flex flex-wrap justify-between lk:flex-col lk:space-y-12 w-full">
+                        <section className="flex lk:flex-col space-x-24 lk:space-y-8 lk:space-x-0">
+                            <section>
+                                <h4 className="font-bold text-white mb-4">{footerTexts.company}</h4>
+                                <ul className="space-y-2">
+                                    {footerTexts.companyItems.map((item, index) => (
+                                        <li key={index}><a href={item.href} className="text-white text-base hover:text-cyan hover:underline">{item.text}</a></li>
+                                    ))}
+                                </ul>
+                            </section>
+                            <section>
+                                <h4 className="font-bold text-white mb-4">{footerTexts.product}</h4>
+                                <ul className="space-y-2">
+                                    {footerTexts.productItems.map((item, index) => (
+                                        <li key={index}><a href={item.href} className="text-white text-base hover:text-cyan hover:underline">{item.text}</a></li>
+                                    ))}
+                                </ul>
+                            </section>
+                            <section>
+                                <h4 className="font-bold text-white mb-4">{footerTexts.social}</h4>
+                                <ul className="space-y-2">
+                                    {footerTexts.socials.map((item, index) => (
+                                        <li key={index}><a href={item.href} className="text-white text-base hover:text-cyan hover:underline">{item.text}</a></li>
+                                    ))}
+                                </ul>
+                            </section>
+                        </section>
+                    </section>   
+                </div> 
+
+            </div>
+            <hr className="bg-gray-300" />
+            <div className="w-full flex justify-between items-center">
+                <div className="text-white text-sm w-fit">
+                    {footerTexts.footerNote}
+                </div>
+                <div className="text-white text-sm flex items-center space-x-6 w-fit">
+                    <Link href="#" passHref>
+                        Terms of Service
+                    </Link>
+                    <Link href="#" passHref>
+                        Privacy Policy
+                    </Link>
+                </div>
+            </div>   
+        </div>
+    )
+}
+
+export default Footer;
