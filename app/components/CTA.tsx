@@ -13,14 +13,14 @@ const CTA = () => {
         <div className="w-full px-24">
             <div className="rounded-2xl bg-stone-900">
                 <div className="space-y-8 p-12 justify-center items-center flex flex-col">
-                    <img src={ctaItems.image} alt="ribbon" className="w-full" />
+                    <img src={ctaItems.image} alt="ribbon" className="w-full animate-bounce" />
                     <h1 className="text-[80px] text-center font-bold">
                         {ctaItems.title}
                     </h1>
                     <motion.button 
-						className="bg-white h-12 px-2 rounded-full flex justify-center"
+						className="bg-white h-12 pr-2 pl-4 cursor-pointer rounded-full flex justify-center"
 						whileHover={{
-							background: "linear-gradient(0deg, rgba(0, 56, 255, 0.02) 0%, rgba(0, 56, 255, 0.02) 100%), #17182c",
+							background: "linear-gradient(0deg, rgba(0, 56, 255, 0.02) 0%, rgba(0, 56, 255, 0.02) 100%), #EF4136",
 							scale: 1.01,
 							transition: { duration: 0.3 }
 						}}

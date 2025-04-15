@@ -19,13 +19,6 @@
 
     /* Custom Box Shadow */
     --shadow-3xl: 0px 15px 35px rgba(13, 21, 55, 0.08);
-
-    /* Custom Responsive Breakpoints */
-    --breakpoint-sm: 414px;
-    --breakpoint-md: 767px;
-    --breakpoint-lg: 1079px;
-    --breakpoint-xl: 1279px;
-    --breakpoint-2xl: 1536px;
 }
 
 /* Dark mode overrides using a media query */
@@ -44,31 +37,31 @@ body {
 }
 
 @font-face {
-  font-family: 'Product-Sans';
-  src: url('/fonts/Product_Sans.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
+    font-family: 'Product-Sans';
+    src: url('/fonts/Product_Sans.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'Product-Sans-Medium';
-  src: url('/fonts/Product_Sans_Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
+    font-family: 'Product-Sans-Medium';
+    src: url('/fonts/Product_Sans_Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'Product-Sans-Bold';
-  src: url('/fonts/Product_Sans_Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
+    font-family: 'Product-Sans-Bold';
+    src: url('/fonts/Product_Sans_Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'Product-Sans-Black';
-  src: url('/fonts/Product_Sans_Black.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
+    font-family: 'Product-Sans-Black';
+    src: url('/fonts/Product_Sans_Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
 }
 
 /* Custom utilities layer */

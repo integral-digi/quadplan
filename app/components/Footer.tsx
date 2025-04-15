@@ -43,8 +43,8 @@ const footerTexts = {
 const Footer = () => {
     return (
         <div className="space-y-12 flex flex-col justify-center items-center px-24">
-            <div className="w-full flex justify-between lk:flex-col lk:space-y-12">
-                <div className="w-[35%] lk:w-full">
+            <div className="w-full flex justify-between @max-lg:md:flex-col @max-lg:md:space-y-12">
+                <div className="w-[35%] @max-lg:md:w-full">
                     <div className="space-y-6">
                         <img src="/assets/quadplan.svg" alt="logo" className="h-6 w-auto" />
                         <p className="text-white text-base font-norml">
@@ -52,9 +52,9 @@ const Footer = () => {
                         </p>
                     </div>
                 </div>
-                <div className="w-[45%] flex justify-end lk:w-full">
-                    <section className="flex flex-wrap justify-between lk:flex-col lk:space-y-12 w-full">
-                        <section className="flex lk:flex-col space-x-24 lk:space-y-8 lk:space-x-0">
+                <div className="w-[45%] flex justify-end @max-lg:md:w-full">
+                    <section className="flex flex-wrap justify-between @max-lg:md:flex-col @max-lg:md:space-y-12 w-full">
+                        <section className="flex @max-lg:md:flex-col space-x-24 @max-lg:md:space-y-8 @max-lg:md:space-x-0">
                             <section>
                                 <h4 className="font-bold text-white mb-4">{footerTexts.company}</h4>
                                 <ul className="space-y-2">

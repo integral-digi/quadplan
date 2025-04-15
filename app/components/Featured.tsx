@@ -51,10 +51,10 @@ const Featured = () => {
 					</div>
 					<div className="space-y-2 w-1/4">
 						<h2 className="text-5xl font-bold text-white">
-							{featuredCase.clientType}
+							3x Growth
 						</h2>
 						<p className="font-normal text-white text-base">
-							Company Type
+							Result
 						</p>
 					</div>
 				</div>

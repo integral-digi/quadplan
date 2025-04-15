@@ -67,9 +67,9 @@ const HomeNav = () => {
                 <div className="flex items-center space-x-12">
                     <Link href={navItems.actions[0].href} passHref>
                         <motion.button 
-                            className="bg-stone-900 border border-white h-12 px-2 rounded-full flex justify-center"
+                            className="bg-stone-900 border border-white h-12 pr-2 pl-4 cursor-pointer rounded-full flex justify-center"
                             whileHover={{
-                                background: "linear-gradient(0deg, rgba(0, 56, 255, 0.02) 0%, rgba(0, 56, 255, 0.02) 100%), #17182c",
+                                background: "linear-gradient(0deg, rgba(0, 56, 255, 0.02) 0%, rgba(0, 56, 255, 0.02) 100%), #EF4136",
                                 scale: 1.01,
                                 transition: { duration: 0.3 }
                             }}

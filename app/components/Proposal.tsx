@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const proposalItems = {
 	title: "We Don't Just Build Apps",
-	info: "At Quadplan, we’re not just another dev shop—we’re your product’s strategic launch partner. From idea to interface, we specialize in crafting high-performance web and mobile applications that don’t just function, they lead markets, delight users, and scale with confidence. Whether you’re a startup founder with a groundbreaking idea, or a business leader ready to transform operations digitally—you’re in the right place",
+	info: "At Quadplan, we’re not just another dev studio—we’re your product’s strategic launch partner. From idea to interface, we specialize in crafting high-performance web and mobile applications that don’t just function, they lead markets, delight users, and scale with confidence. Whether you’re a startup founder with a groundbreaking idea, or a business leader ready to transform operations digitally—you’re in the right place",
 	buttonText: "Schedule Call Now",
 	firstImage: "/assets/app-one.svg",
 	secondImage: "/assets/app-two.svg"
@@ -46,25 +46,46 @@ const Proposal = () => {
 							{proposalItems.info}
 						</p>
 					</div>
-					<motion.button
-						className="bg-white h-12 px-2 rounded-full flex justify-center"
-						whileHover={{
-							background:
-								"linear-gradient(0deg, rgba(0, 56, 255, 0.02) 0%, rgba(0, 56, 255, 0.02) 100%), #17182c",
-							scale: 1.01,
-							transition: { duration: 0.3 }
-						}}
-					>
-						<div className="flex space-x-4 items-center w-full">
-							<p className="text-stone-900 text-base">
-								{proposalItems.buttonText}
-							</p>
-							<div className="rounded-full h-8 w-8 bg-red-500 flex items-center justify-center">
-								<ArrowUpRightIcon className="w-4 h-4 text-white" />
+					<div className="flex items-center space-x-8">
+						<motion.button
+							className="bg-white h-12 pr-2 pl-4 cursor-pointer rounded-full flex justify-center"
+							whileHover={{
+								background:
+									"linear-gradient(0deg, rgba(0, 56, 255, 0.02) 0%, rgba(0, 56, 255, 0.02) 100%), #EF4136",
+								scale: 1.01,
+								transition: { duration: 0.3 }
+							}}
+						>
+							<div className="flex space-x-4 items-center w-full">
+								<p className="text-stone-900 text-base">
+									{proposalItems.buttonText}
+								</p>
+								<div className="rounded-full h-8 w-8 bg-red-500 flex items-center justify-center">
+									<ArrowUpRightIcon className="w-4 h-4 text-white" />
+								</div>
 							</div>
-						</div>
-					</motion.button>
+						</motion.button>
+						<motion.button
+							className="bg-transparent h-12 pr-2 pl-4 cursor-pointer rounded-full flex justify-center"
+							whileHover={{
+								background:
+									"linear-gradient(0deg, rgba(0, 56, 255, 0.02) 0%, rgba(0, 56, 255, 0.02) 100%), #EF4136",
+								scale: 1.01,
+								transition: { duration: 0.3 }
+							}}
+						>
+							<div className="flex space-x-4 items-center w-full">
+								<p className="text-white text-base">
+									Refer us
+								</p>
+								<div className="rounded-full h-8 w-8 bg-red-500 flex items-center justify-center">
+									<ArrowUpRightIcon className="w-4 h-4 text-white" />
+								</div>
+							</div>
+						</motion.button>
+					</div>
 				</motion.div>
+				
 
 				{/* Right Section: Image Containers */}
 				<motion.div
