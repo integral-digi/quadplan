@@ -70,7 +70,7 @@ const Principle = () => {
 						className="w-full md:w-1/3 h-80 md:h-96 relative bg-stone-900 rounded-2xl overflow-hidden"
 					>
 						<div className="space-y-8 p-4 md:p-8">
-							<h1 className="text-white font-bold text-2xl md:text-[40px] w-3/4">
+							<h1 className="text-white font-bold text-2xl md:text-[40px] w-[80%]">
 								{item.title}
 							</h1>
 							<p className={style.paragraph}>{item.subtitle}</p>

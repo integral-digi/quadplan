@@ -105,7 +105,7 @@ const ContactForm = () => {
 								type="tel"
 								name="user_phone"
 								className="mt-2 w-full h-12 px-4 bg-transparent border border-white/5 rounded-md"
-								placeholder="+234 123 456 7890"
+								placeholder="+1 123 456 7890"
 							/>
 						</fieldset>
 
@@ -130,7 +130,7 @@ const ContactForm = () => {
 										leaveFrom="opacity-100"
 										leaveTo="opacity-0"
 									>
-										<ListboxOptions className="absolute z-10 mt-1 max-h-60 w-full overflow-auto bg-stone-800 border border-white/10 rounded-md py-1 text-base focus:outline-none">
+										<ListboxOptions className="absolute z-10 mt-1 max-h-60 w-full overflow-auto bg-stone-800 border border-white/10 rounded-md p-2 text-base focus:outline-none">
 											{budgetRanges.map(range => (
 												<ListboxOption key={range.id} value={range}>
 													{({ selected, focus }) => (
