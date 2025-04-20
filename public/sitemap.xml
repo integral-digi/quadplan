@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+	<!-- Core Pages -->
+	<url>
+		<loc>https://www.quadplan.co/</loc>
+		<lastmod>2025-04-20</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://www.quadplan.co/services</loc>
+		<lastmod>2025-04-20</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://www.quadplan.co/blog</loc>
+		<lastmod>2025-04-20</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.7</priority>
+	</url>
+
+	<!-- Blog Posts -->
+	<url>
+		<loc>https://www.quadplan.co/blog/1</loc>
+		<lastmod>2025-04-15</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>https://www.quadplan.co/blog/2</loc>
+		<lastmod>2025-04-10</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>https://www.quadplan.co/blog/3</loc>
+		<lastmod>2025-04-10</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>https://www.quadplan.co/blog/4</loc>
+		<lastmod>2025-04-10</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>https://www.quadplan.co/blog/5</loc>
+		<lastmod>2025-04-10</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>https://www.quadplan.co/blog/6</loc>
+		<lastmod>2025-04-10</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<!-- Add entries for ids 3–6 similarly -->
+
+	<!-- Portfolio / Case Studies -->
+	<url>
+		<loc>https://www.quadplan.co/cases/middletrust</loc>
+		<lastmod>2023-12-01</lastmod>
+		<changefreq>yearly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://www.quadplan.co/cases/travvelbaby</loc>
+		<lastmod>2021-08-15</lastmod>
+		<changefreq>yearly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://www.quadplan.co/cases/testace</loc>
+		<lastmod>2023-06-20</lastmod>
+		<changefreq>yearly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://www.quadplan.co/cases/ricochet</loc>
+		<lastmod>2023-06-20</lastmod>
+		<changefreq>yearly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://www.quadplan.co/cases/masteryecom</loc>
+		<lastmod>2023-06-20</lastmod>
+		<changefreq>yearly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<!-- Add the rest of your project URLs (Toodle, Daintree, Ricochet, etc.) -->
+
+</urlset>
