@@ -1,0 +1,46 @@
+{
+	"items": [
+		{
+			"id": 1,
+			"thumbnail": "/images/blog/mvp-guide.png",
+			"title": "The Ultimate Guide to Building an MVP: From Idea to Launch",
+			"post": "Launching a minimum viable product (MVP) the right way can make or break your startup. In this comprehensive guide, we'll walk you through idea validation techniques, lean design principles, recommended tech stacks, and sprint‑based development timelines so you can ship fast, learn faster, and minimize risk. Whether you’re a first‑time founder or a seasoned entrepreneur, these proven strategies will help you avoid common pitfalls and set your product on a path to success.",
+			"tags": ["MVP", "Startup", "Product Development"]
+		},
+		{
+			"id": 2,
+			"thumbnail": "/images/blog/design-thinking.png",
+			"title": "Why Design Thinking Is Crucial for Successful Apps",
+			"post": "Great apps don’t happen by accident. They’re the result of human‑centered design thinking: empathizing with users, defining core problems, ideating creative solutions, prototyping rapidly, and testing relentlessly. In this article, we explore how applying design thinking at every stage—from discovery workshops to final handoff—can elevate your user experience, reduce development costs, and drive long‑term engagement.",
+			"tags": ["Design Thinking", "UX", "UI"]
+		},
+		{
+			"id": 3,
+			"thumbnail": "/images/blog/ui-ux-trends-2025.png",
+			"title": "Top 7 UI/UX Trends You Can’t Ignore in 2025",
+			"post": "As technology evolves, so do user expectations. From immersive micro‑interactions to AI‑driven personalization and accessible inclusive design, 2025 is shaping up to be a breakthrough year for digital interfaces. We’ve distilled the top seven trends you need to watch—and implement—to keep your product feeling fresh, intuitive, and ahead of the curve.",
+			"tags": ["UI/UX", "Design", "Trends"]
+		},
+		{
+			"id": 4,
+			"thumbnail": "/images/blog/tech-stack.png",
+			"title": "How to Choose the Right Tech Stack for Your Web App",
+			"post": "Picking the perfect tech stack can feel overwhelming—React, Next.js, Vue, Svelte, Node.js, Rails, and the list goes on. In this post, we break down the strengths and trade‑offs of today’s leading frameworks and libraries. Learn how to align your technology choices with your team’s skills, product goals, and scalability requirements to build a maintainable, high‑performance application.",
+			"tags": ["Tech Stack", "Web Development", "Next.js"]
+		},
+		{
+			"id": 5,
+			"thumbnail": "/images/blog/agile-vs-waterfall.png",
+			"title": "Agile vs Waterfall: Which Methodology Wins for Startups?",
+			"post": "In the race to market, process matters. Should you follow a strict Waterfall plan or embrace the flexibility of Agile sprints? We compare both methodologies from a startup’s perspective—covering planning overhead, team collaboration, risk management, and delivery speed—so you can choose the right workflow to maximize productivity and adapt to changing requirements.",
+			"tags": ["Agile", "Project Management", "Startup"]
+		},
+		{
+			"id": 6,
+			"thumbnail": "/images/blog/onboarding-best-practices.png",
+			"title": "Maximizing User Engagement: Best Practices for Onboarding Flows",
+			"post": "Your onboarding flow is the first real impression users have of your product. Nail it, and you’ll see stickier retention and happier customers; botch it, and they’ll abandon ship. Here are proven best practices—progressive disclosure, timed tooltips, interactive tutorials, and personalization—that will help you craft an onboarding experience that feels effortless and keeps users coming back.",
+			"tags": ["User Engagement", "Onboarding", "UX"]
+		}
+	]
+}

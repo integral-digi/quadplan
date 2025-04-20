@@ -14,9 +14,9 @@ const testimonialItems = {
 const Testimonials = () => {
 	return (
 		<div className="w-full">
-			<div className="px-24 space-y-16 relative">
+			<div className="lg:px-24 px-4 space-y-16 relative">
 				<div className="space-y-6">
-					<h2 className="text-white font-bold text-[40px]">
+					<h2 className="text-white font-bold text-2xl lg:text-[40px]">
 						{testimonialItems.title}
 					</h2>
 					<p className="text-white font-normal text-base">

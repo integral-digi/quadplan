@@ -10,7 +10,7 @@ export const navItems = {
     logo: "/assets/quadplan.svg",
     links: [
         { name: "About", href: "/about" },
-        { name: "Portfolio", href: "/portfolio" },
+        { name: "Cases", href: "/cases" },
         { name: "Services", href: "#" },
         { name: "Shop", href: "#" },
     ],

@@ -10,19 +10,15 @@ const photos = [
 const Slider = () => {
 	return (
 		<div className="w-full overflow-clip">
-			<div className="flex space-x-16 items-center">
+			<div className="flex space-x-4 md:space-x-16 items-center">
 				{photos.map((photo) => (
 					<motion.div
 						key={photo.id}
-						className="h-[640px] w-full"
-						// Initial state: start 50px lower and transparent.
+						// Use a shorter height on mobile devices, increasing on md+
+						className="w-full h-[300px] md:h-[640px]"
 						initial={{ opacity: 0, x: 50 }}
-						// When the component enters the viewport, animate to visible and in place.
 						whileInView={{ opacity: 1, x: 0 }}
-						// Transition settings can be adjusted as needed.
 						transition={{ duration: 1.5, ease: "easeOut" }}
-						// "once" ensures the animation triggers only a single time,
-						// and "amount" specifies the percentage of the component that needs to be visible.
 						viewport={{ once: true, amount: 0.5 }}
 					>
 						<img

@@ -38,8 +38,7 @@ const boxItemsTwo = [
 	},
 ];
 
-// Variant object with a custom index for staggered delay.
-// Each card starts hidden (opacity 0, y offset) and animates to visible.
+// Variant for each card, with a dynamic delay based on its index.
 const cardVariant = {
 	hidden: { opacity: 0, y: 50 },
 	visible: (custom: any) => ({
@@ -51,9 +50,9 @@ const cardVariant = {
 
 const Principle = () => {
 	return (
-		<div className="space-y-5 w-full px-20">
+		<div className="space-y-5 w-full px-4 md:px-20 py-10">
 			{/* First row of boxes */}
-			<div className="flex justify-between space-x-5">
+			<div className="flex flex-col md:flex-row md:justify-between md:space-x-5 space-y-5 md:space-y-0">
 				{boxItems.map((item, index) => (
 					<motion.div
 						key={item.id}
@@ -62,21 +61,22 @@ const Principle = () => {
 						initial="hidden"
 						whileInView="visible"
 						whileHover={{
-							background: "linear-gradient(0deg, rgba(0, 56, 255, 0.02) 0%, rgba(0, 56, 255, 0.02) 100%), #EF4136",
+							background:
+								"linear-gradient(0deg, rgba(0, 56, 255, 0.02) 0%, rgba(0, 56, 255, 0.02) 100%), #EF4136",
 							scale: 1.01,
-							transition: { duration: 0.3 }
+							transition: { duration: 0.3 },
 						}}
 						viewport={{ once: true, amount: 0.5 }}
-						className="w-1/3 h-96 relative bg-stone-900 rounded-2xl"
+						className="w-full md:w-1/3 h-80 md:h-96 relative bg-stone-900 rounded-2xl overflow-hidden"
 					>
-						<div className="space-y-12 p-8">
-							<h1 className="text-[40px] font-bold text-white w-[90%]">
+						<div className="space-y-8 p-4 md:p-8">
+							<h1 className="text-white font-bold text-2xl md:text-[40px] w-3/4">
 								{item.title}
 							</h1>
 							<p className={style.paragraph}>{item.subtitle}</p>
 						</div>
 						<img
-							className="absolute right-6 bottom-6"
+							className="absolute right-4 bottom-4 w-8 h-8 md:w-10 md:h-10"
 							src="/assets/down-right-arrow.svg"
 							alt="arrow"
 						/>
@@ -85,7 +85,7 @@ const Principle = () => {
 			</div>
 
 			{/* Second row of boxes */}
-			<div className="flex justify-between space-x-5">
+			<div className="flex flex-col md:flex-row md:justify-between md:space-x-5 space-y-5 md:space-y-0">
 				{boxItemsTwo.map((item, index) => (
 					<motion.div
 						key={item.id}
@@ -94,23 +94,24 @@ const Principle = () => {
 						initial="hidden"
 						whileInView="visible"
 						whileHover={{
-							background: "linear-gradient(0deg, rgba(0, 56, 255, 0.02) 0%, rgba(0, 56, 255, 0.02) 100%), #EF4136",
+							background:
+								"linear-gradient(0deg, rgba(0, 56, 255, 0.02) 0%, rgba(0, 56, 255, 0.02) 100%), #EF4136",
 							scale: 1.01,
-							transition: { duration: 0.3 }
+							transition: { duration: 0.3 },
 						}}
 						viewport={{ once: true, amount: 0.5 }}
 						className={`${
 							item.id === 2 ? "bg-red-500" : "bg-stone-900"
-						} shadow-3xl rounded-2xl w-1/2 h-96 relative`}
+						} shadow-3xl rounded-2xl w-full md:w-1/2 h-80 md:h-96 relative overflow-hidden`}
 					>
-						<div className="space-y-12 p-8">
-							<h1 className="text-[40px] font-bold text-white w-1/2">
+						<div className="space-y-8 p-4 md:p-8">
+							<h1 className="text-white font-bold text-xl md:text-[40px] w-1/2">
 								{item.title}
 							</h1>
 							<p className={style.paragraph}>{item.subtitle}</p>
 						</div>
 						<img
-							className="absolute right-6 bottom-6"
+							className="absolute right-4 bottom-4 w-8 h-8 md:w-10 md:h-10"
 							src="/assets/down-right-arrow.svg"
 							alt="arrow"
 						/>

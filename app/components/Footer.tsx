@@ -29,11 +29,11 @@ const footerTexts = {
     ],
     social: "Social",
     socials: [
-      { text: "Dribbble", href: "#" },
-      { text: "LinkedIn", href: "#" },
-      { text: "Instagram", href: "#" },
-      { text: "Twitter", href: "#" },
-      { text: "Facebook", href: "#" }
+      { text: "Dribbble", href: "https://dribbble.com/quadplan" },
+      { text: "LinkedIn", href: "https://linkedin.com/company/quadplan" },
+      { text: "Instagram", href: "https://instagram.com/thequadplan" },
+      { text: "Twitter", href: "https://twitter.com/quadplan" },
+      { text: "Facebook", href: "https://facebook.com/quadplan" }
     ],
 
     footerNote: "© 2025 Quadplan. All rights reserved.",
@@ -59,7 +59,7 @@ const Footer = () => {
                                 <h4 className="font-bold text-white mb-4">{footerTexts.company}</h4>
                                 <ul className="space-y-2">
                                     {footerTexts.companyItems.map((item, index) => (
-                                        <li key={index}><a href={item.href} className="text-white text-base hover:text-cyan hover:underline">{item.text}</a></li>
+                                        <li key={index}><Link href={item.href} className="text-white text-base hover:text-cyan hover:underline">{item.text}</Link></li>
                                     ))}
                                 </ul>
                             </section>
@@ -67,7 +67,7 @@ const Footer = () => {
                                 <h4 className="font-bold text-white mb-4">{footerTexts.product}</h4>
                                 <ul className="space-y-2">
                                     {footerTexts.productItems.map((item, index) => (
-                                        <li key={index}><a href={item.href} className="text-white text-base hover:text-cyan hover:underline">{item.text}</a></li>
+                                        <li key={index}><Link href={item.href} className="text-white text-base hover:text-cyan hover:underline">{item.text}</Link></li>
                                     ))}
                                 </ul>
                             </section>
@@ -75,7 +75,7 @@ const Footer = () => {
                                 <h4 className="font-bold text-white mb-4">{footerTexts.social}</h4>
                                 <ul className="space-y-2">
                                     {footerTexts.socials.map((item, index) => (
-                                        <li key={index}><a href={item.href} className="text-white text-base hover:text-cyan hover:underline">{item.text}</a></li>
+                                        <li key={index}><Link href={item.href} target="_blank" className="text-white text-base hover:text-cyan hover:underline">{item.text}</Link></li>
                                     ))}
                                 </ul>
                             </section>
