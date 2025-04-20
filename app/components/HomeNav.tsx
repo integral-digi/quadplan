@@ -10,9 +10,9 @@ export const navItems = {
     logo: "/assets/quadplan.svg",
     links: [
         { name: "About", href: "/about" },
+        { name: "Blog", href: "#" },
         { name: "Cases", href: "/cases" },
-        { name: "Services", href: "#" },
-        { name: "Shop", href: "#" },
+        { name: "Founders Deal", href: "#" },
     ],
     actions: [
         { name: "Contact Us", href: "/contact" },
@@ -67,7 +67,7 @@ const HomeNav = () => {
                 <div className="flex items-center space-x-12">
                     <Link href={navItems.actions[0].href} passHref>
                         <motion.button 
-                            className="bg-stone-900 border border-white h-12 pr-2 pl-4 cursor-pointer rounded-full flex justify-center"
+                            className="bg-zinc-800/30 border border-white h-12 pr-2 pl-4 cursor-pointer rounded-full flex justify-center"
                             whileHover={{
                                 background: "linear-gradient(0deg, rgba(0, 56, 255, 0.02) 0%, rgba(0, 56, 255, 0.02) 100%), #EF4136",
                                 scale: 1.01,

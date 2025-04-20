@@ -1,6 +1,6 @@
 const EmptyTray = () => {
     return (
-        <div className="border-stone-900 border rounded-lg w-full justify-center items-center flex">
+        <div className="border-zinc-800/30 border rounded-lg w-full justify-center items-center flex">
             <div className="w-fit space-y-9 flex items-center justify-center flex-col p-16">
                 <img 
                     src="/assets/empty-desk.svg" 

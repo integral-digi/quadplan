@@ -67,12 +67,12 @@ const Principle = () => {
 							transition: { duration: 0.3 },
 						}}
 						viewport={{ once: true, amount: 0.5 }}
-						className="w-full md:w-1/3 h-80 md:h-96 relative bg-stone-900 rounded-2xl overflow-hidden"
+						className="w-full md:w-1/3 h-80 md:h-96 relative bg-zinc-800/30 rounded-2xl overflow-hidden"
 					>
 						<div className="space-y-8 p-4 md:p-8">
-							<h1 className="text-white font-bold text-2xl md:text-[40px] w-[80%]">
+							<h3 className="text-white font-bold text-2xl md:text-[40px] w-[80%]">
 								{item.title}
-							</h1>
+							</h3>
 							<p className={style.paragraph}>{item.subtitle}</p>
 						</div>
 						<img
@@ -101,13 +101,13 @@ const Principle = () => {
 						}}
 						viewport={{ once: true, amount: 0.5 }}
 						className={`${
-							item.id === 2 ? "bg-red-500" : "bg-stone-900"
+							item.id === 2 ? "bg-red-500" : "bg-zinc-800/30"
 						} shadow-3xl rounded-2xl w-full md:w-1/2 h-80 md:h-96 relative overflow-hidden`}
 					>
 						<div className="space-y-8 p-4 md:p-8">
-							<h1 className="text-white font-bold text-xl md:text-[40px] w-1/2">
+							<h3 className="text-white font-bold text-xl md:text-[40px] w-1/2">
 								{item.title}
-							</h1>
+							</h3>
 							<p className={style.paragraph}>{item.subtitle}</p>
 						</div>
 						<img

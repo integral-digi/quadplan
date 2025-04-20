@@ -25,7 +25,7 @@ const Testimonials = () => {
 				</div>
 				<div className="overflow-x-hidden flex items-center justify-between space-x-6 w-full testimonial-section">
 					{testimonialItems.singles.map((item)=>(
-						<div className="bg-stone-900 rounded-2xl p-6 w-full" key={item.id}>
+						<div className="bg-zinc-800/30 rounded-2xl p-6 w-full" key={item.id}>
 							<div className="space-y-5 w-full">
 								<img src="/assets/quote.svg" alt="quote" className="h-8 w-auto" />
 								<p className="text-white font-normal text-base">

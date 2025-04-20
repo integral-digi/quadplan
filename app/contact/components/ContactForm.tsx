@@ -44,7 +44,7 @@ const ContactForm = () => {
 	};
 
 	return (
-		<div className="w-full rounded-2xl h-full bg-stone-900 overflow-clip">
+		<div className="w-full rounded-2xl h-full bg-zinc-800/30 overflow-clip">
 			<div className="flex w-full rounded-2xl h-full">
 				{/* Left Panel */}
 				<div className="w-1/2 bg-red-500 p-12 min-h-[640px] relative overflow-clip">
@@ -180,7 +180,7 @@ const ContactForm = () => {
 								transition: { duration: 0.3 }
 							}}
 						>
-							<span className="text-stone-900 text-base font-bold mr-4">
+							<span className="text-zinc-900 text-base font-bold mr-4">
 								{isSent ? "Sent!" : "Send Message"}
 							</span>
 							<div className="flex items-center justify-center w-8 h-8 bg-red-500 rounded-full">

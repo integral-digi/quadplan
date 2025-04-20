@@ -11,12 +11,12 @@ const ctaItems = {
 const CTA = () => {
     return (
         <div className="w-full px-24">
-            <div className="rounded-2xl bg-stone-900">
+            <div className="rounded-2xl bg-zinc-800/30">
                 <div className="space-y-8 p-12 justify-center items-center flex flex-col">
                     <img src={ctaItems.image} alt="ribbon" className="w-full animate-bounce" />
-                    <h1 className="text-[80px] text-center font-bold">
+                    <h2 className="text-[80px] text-center font-bold">
                         {ctaItems.title}
-                    </h1>
+                    </h2>
                     <motion.button 
 						className="bg-white h-12 pr-2 pl-4 cursor-pointer rounded-full flex justify-center"
 						whileHover={{
@@ -26,7 +26,7 @@ const CTA = () => {
 						}}
 					>
 						<div className="flex space-x-4 items-center w-full">
-							<p className="text-stone-900 text-base">
+							<p className="text-zinc-900 text-base">
 								{ctaItems.buttonText}
 							</p>
 							<div className="rounded-full h-8 w-8 bg-red-500 flex items-center justify-around">

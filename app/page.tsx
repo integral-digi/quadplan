@@ -2,6 +2,7 @@ import Cases from "./components/Cases";
 import CTA from "./components/CTA";
 import CursorAnim from "./components/CursorAnim";
 import FallDiv from "./components/FallDiv";
+import FAQSection from "./components/FAQ";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import HomeNav from "./components/HomeNav";
@@ -23,6 +24,9 @@ const Home = () => {
 				<meta property="og:description" content="Build better products, faster. Full‑stack design and development tailored for early‑stage teams." />
 				<meta property="og:url" content="https://quadplan.co/" />
 				<meta property="og:type" content="website" />
+				<meta name="keywords" content="software development, product design, MVP, startup design agency, web development, app development, SaaS, UI/UX design" />
+				<meta name="author" content="Quadplan" />
+
 				{/* JSON‑LD Schema */}
 				<script
 					type="application/ld+json"
@@ -36,9 +40,21 @@ const Home = () => {
 									"name": "Quadplan",
 									"url": "https://www.quadplan.co",
 									"logo": "https://www.quadplan.co/assets/quadplan.svg",
+									"description": "Quadplan is a product-focused software design and development studio helping startups build world-class digital products—from MVP to scale.",
+									"foundingDate": "2022-10-21",
+									"founder": {
+										"@type": "Person",
+										"name": "Efe Ojadua"
+									},
+									"address": {
+										"@type": "PostalAddress",
+										"addressCountry": "NG"
+									},
 									"sameAs": [
 										"https://www.linkedin.com/company/quadplan",
-										"https://twitter.com/thequadplan"
+										"https://twitter.com/thequadplan",
+										"https://www.instagram.com/thequadplan",
+										"https://github.com/quadplan"
 									],
 									"contactPoint": {
 										"@type": "ContactPoint",
@@ -47,8 +63,8 @@ const Home = () => {
 										"areaServed": "NG",
 										"availableLanguage": ["English"]
 									}
-									},
-									{
+								},
+								{
 									"@type": "WebSite",
 									"url": "https://www.quadplan.co",
 									"name": "Quadplan – Software Design & Development Studio",
@@ -64,6 +80,7 @@ const Home = () => {
 					}}
 				/>
 			</Head>
+
 			<div className="w-full space-y-40 py-8">
 				<HomeNav />
 				<div className="flex items-center justify-center">
@@ -76,13 +93,14 @@ const Home = () => {
 				<Proposal />
 				<Services />
 				<Cases />
+				<FAQSection />
 				<Testimonials />
 				<CTA />
 				<Footer />
 			</div>
 			<CursorAnim />
 		</main>
-	)
-}
+	);
+};
 
 export default Home;

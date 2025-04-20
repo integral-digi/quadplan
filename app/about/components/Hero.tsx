@@ -2,9 +2,11 @@
 import { motion } from "framer-motion";
 
 const heroItems = {
-    title: "Case Studies",
+    title: "Crafting Software That Shapes the Futures",
     subtitle:
-        "A few of the projects we have delivered to happy clients recently",
+        "At Quadplan, we don’t just build software—we design digital experiences that spark innovation and fuel growth. We’re a close-knit team of strategists, designers, and developers passionate about turning ambitious ideas into scalable, world-class products.",
+    moreInfo: "Founded on the belief that great design and robust technology go hand in hand, Quadplan exists to help startups and forward-thinking companies launch faster, smarter, and with clarity.",
+    someMore: "We work with visionary founders and product teams to cut through complexity and deliver clear, elegant solutions—whether it’s crafting your MVP, scaling your SaaS platform, or refining your user experience."
 };
 
 export const style = {
@@ -48,6 +50,12 @@ const Hero = () => {
                         variants={childVariants}
                     >
                         {heroItems.subtitle}
+                    </motion.p>
+                    <motion.p
+                        className={`text-center px-4 sm:px-8 md:px-20 ${style.paragraph}`}
+                        variants={childVariants}
+                    >
+                        {heroItems.moreInfo}
                     </motion.p>
                 </motion.div>
             </motion.div>

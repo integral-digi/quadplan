@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 
 const heroItems = {
-    title: "Case Studies",
+    title: "Results that exceed expectations",
     subtitle:
         "A few of the projects we have delivered to happy clients recently",
 };

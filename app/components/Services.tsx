@@ -57,7 +57,7 @@ const Services = () => {
 					{duplicateItems(serviceItems.rowOne).map((item, index) => (
 						<div
 							key={`rowOne-${index}`}
-							className="bg-stone-900 rounded-2xl w-[45%] h-60 px-6 flex items-center justify-around flex-shrink-0"
+							className="bg-zinc-800/30 rounded-2xl w-[45%] h-60 px-6 flex items-center justify-around flex-shrink-0"
 						>
 							<div className="flex space-x-10 items-center">
 								<div className="w-[210px] h-[180px]">
@@ -90,7 +90,7 @@ const Services = () => {
 					{duplicateItems(serviceItems.rowTwo).map((item, index) => (
 						<div
 							key={`rowTwo-${index}`}
-							className="bg-stone-900 rounded-2xl h-60 px-6 flex items-center justify-around w-[45%] flex-shrink-0"
+							className="bg-zinc-800/30 rounded-2xl h-60 px-6 flex items-center justify-around w-[45%] flex-shrink-0"
 						>
 							<div className="flex space-x-10 items-center">
 								<div className="w-[210px] h-[180px]">

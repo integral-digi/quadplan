@@ -46,7 +46,7 @@ const ContentTray: React.FC = () => {
                                     <div className="flex items-start justify-between">
                                         <div className="flex flex-wrap gap-3">
                                             {item.tags.map((tag: string, index: number) => (
-                                                <div className="px-3 py-1 bg-stone-900 rounded-full" key={`${tag}-${index}`}>
+                                                <div className="px-3 py-1 bg-zinc-800/30 rounded-full" key={`${tag}-${index}`}>
                                                     <p className="text-sm text-white font-medium">
                                                         {tag}
                                                     </p>

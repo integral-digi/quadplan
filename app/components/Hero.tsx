@@ -63,7 +63,7 @@ const Hero = () => {
 
 				{/* Button */}
 				<motion.button
-					className="cursor-pointer px-6 h-16 bg-white rounded-full text-stone-900 font-bold w-fit mx-auto"
+					className="cursor-pointer px-6 h-16 bg-white rounded-full text-zinc-900 font-bold w-fit mx-auto"
 					variants={childVariants}
 					whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
 				>

@@ -65,7 +65,7 @@ const FallDiv = () => {
 	const dropDelayFactor = 0.5; // Delay increment per item
 
 	return (
-		<div className="bg-stone-900 w-full h-fit">
+		<div className="bg-zinc-800/30 w-full h-fit">
 			<div
 				className="w-full h-full pl-6 md:pl-24 pt-12 md:pt-24 relative"
 				ref={containerRef}
@@ -91,7 +91,7 @@ const FallDiv = () => {
 									// Using percentages for responsiveness.
 									right: `calc(10% + ${index * 5}%)`,
 								}}
-								className="bg-stone-900 rounded-full border border-white px-4 md:px-6 h-10 md:h-16 flex items-center justify-center shadow-md whitespace-nowrap"
+								className="bg-zinc-800 rounded-full border border-white px-4 md:px-6 h-10 md:h-16 flex items-center justify-center shadow-md whitespace-nowrap"
 								// Initial state before animation starts.
 								initial={{ y: -100, opacity: 0, rotate: 0 }}
 								// Animate only if container is in view.

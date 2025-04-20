@@ -3,7 +3,7 @@
 /* Define default CSS variables */
 :root {
     --background: #ffffff;
-    --foreground: #171717;
+    --foreground: #1A1A1A;
 }
 
 /* CSS‑first theme extension: map CSS custom properties into Tailwind’s system */
@@ -24,7 +24,7 @@
 /* Dark mode overrides using a media query */
 @media (prefers-color-scheme: dark) {
     :root {
-        --background: #0a0a0a;
+        --background: #1A1A1A;
         --foreground: #ededed;
     }
 }
