@@ -32,7 +32,7 @@ const footerTexts = {
       { text: "Dribbble", href: "https://dribbble.com/quadplan" },
       { text: "LinkedIn", href: "https://linkedin.com/company/quadplan" },
       { text: "Instagram", href: "https://instagram.com/thequadplan" },
-      { text: "Twitter", href: "https://twitter.com/quadplan" },
+      { text: "Twitter", href: "https://twitter.com/thequadplan" },
       { text: "Facebook", href: "https://facebook.com/quadplan" }
     ],
 

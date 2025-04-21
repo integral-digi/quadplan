@@ -8,6 +8,8 @@ export const metadata: Metadata = {
 	description: "We help startups build better products, faster. Full-stack design & development tailored to early-stage teams.",
 };
 
+const ogImage = "/images/twitter-img.png"
+
 export default function RootLayout({
 	children,
 }: Readonly<{
@@ -16,6 +18,21 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<head>
+				{/* Open Graph */}
+				<meta property="og:title" content="Quadplan – Custom Software & Product Design for Startups" />
+				<meta property="og:description" content="Build better products, faster. Full‑stack design and development tailored for early‑stage teams." />
+				<meta property="og:url" content="https://www.quadplan.co/" />
+				<meta property="og:type" content="website" />
+				<meta property="og:image" content={ogImage} />
+				<meta property="og:image:width" content="1200" />
+				<meta property="og:image:height" content="630" />
+
+				{/* Twitter Card */}
+				<meta name="twitter:card" content="summary_large_image" />
+				<meta name="twitter:title" content="Quadplan – Custom Software & Product Design for Startups" />
+				<meta name="twitter:description" content="Build better products, faster. Full‑stack design and development tailored for early‑stage teams." />
+				<meta name="twitter:image" content={ogImage} />
+				
 				{/* Google Analytics */}
 				<Script
 					strategy="afterInteractive"
