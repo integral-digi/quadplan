@@ -98,7 +98,7 @@ const FounderHome = () => {
 				<HomeNav />
 				<MobileNav />
 				<Hero />
-				<section className="flex flex-col space-y-16 lg:flex-row lg:items-center xl:-space-x-72 w-full px-4 lg:px-24">
+				<section className="flex flex-col space-y-16 lg:flex-row items-center xl:-space-x-72 w-full px-4 lg:px-24">
 					<section className="space-y-16 w-full">
 						<OurProducts />
 					</section>

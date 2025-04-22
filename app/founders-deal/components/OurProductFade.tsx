@@ -8,13 +8,13 @@ const OurProductFade = () => {
                 <div className="w-full">
                     {single.id === 3 &&
                         <section key={single.id} className="space-y-3 w-full">
-                            <section className="space-y-3">
+                            <section className="space-y-3  w-full">
                                 <h2 className="text-gray-900 font-bold text-3xl">
                                     {single.name}
                                 </h2>
                                 <p className="text-gray-900 font-normal">{single.description}</p>
                             </section>
-                            <section className="flex items-baseline space-x-2">
+                            <section className="flex items-baseline space-x-2 w-full">
                                 <h2 className="text-gray-900 font-bold text-5xl">
                                     {single.amount}
                                 </h2>
