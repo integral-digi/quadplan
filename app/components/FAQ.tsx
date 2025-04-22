@@ -9,7 +9,7 @@ import { PlusIcon } from '@heroicons/react/24/solid';
 import { AnimatePresence, motion, easeOut } from 'framer-motion';
 import React, { Fragment } from 'react';
 
-const faqs = [
+const homeFaqs = [
 	{
 		question: 'What services does Quadplan offer?',
 		answer:
@@ -37,16 +37,16 @@ const faqs = [
 	}
 ];
 
-export default function FAQSection() {
+export default function FAQSection({ faqs=homeFaqs }: any) {
 	return (
 		<section
-			className="w-full px-24 mx-auto"
+			className="w-full px-4 lg:px-24 mx-auto"
 			itemScope
 			itemType="https://schema.org/FAQPage"
 		>
-			<h2 className="text-5xl font-bold mb-20">Frequently Asked Questions</h2>
+			<h2 className="text-3xl lg:text-5xl font-bold mb-20">Frequently Asked Questions</h2>
 			<div className="space-y-12">
-				{faqs.map((faq, idx) => (
+				{faqs.map((faq: any, idx: number) => (
 					<Disclosure
 						key={idx}
 						as="div"
@@ -58,7 +58,7 @@ export default function FAQSection() {
 						{({ open }) => (
 							<>
 								<DisclosureButton className="flex justify-between w-full text-left">
-									<span className="text-3xl font-bold" itemProp="name">
+									<span className="text-xl lg:text-3xl font-bold" itemProp="name">
 										{faq.question}
 									</span>
 									<PlusIcon

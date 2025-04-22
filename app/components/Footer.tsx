@@ -42,9 +42,9 @@ const footerTexts = {
 
 const Footer = () => {
     return (
-        <div className="space-y-12 flex flex-col justify-center items-center px-24">
-            <div className="w-full flex justify-between @max-lg:md:flex-col @max-lg:md:space-y-12">
-                <div className="w-[35%] @max-lg:md:w-full">
+        <div className="w-full space-y-12 flex flex-col justify-center items-center px-4 lg:px-24">
+            <div className="w-full space-y-12 flex flex-col lg:flex-row lg:justify-between">
+                <div className="lg:w-[35%] w-full">
                     <div className="space-y-6">
                         <img src="/assets/quadplan.svg" alt="logo" className="h-6 w-auto" />
                         <p className="text-white text-base font-norml">
@@ -52,9 +52,9 @@ const Footer = () => {
                         </p>
                     </div>
                 </div>
-                <div className="w-[45%] flex justify-end @max-lg:md:w-full">
-                    <section className="flex flex-wrap justify-between @max-lg:md:flex-col @max-lg:md:space-y-12 w-full">
-                        <section className="flex @max-lg:md:flex-col space-x-24 @max-lg:md:space-y-8 @max-lg:md:space-x-0">
+                <div className="lg:w-[45%] lg:flex lg:justify-end w-full">
+                    <section className="flex flex-wrap justify-between lg:flex-col lg:space-y-12 w-full">
+                        <section className="flex flex-col space-x-0 lg:flex-row lg:space-x-24 space-y-8">
                             <section>
                                 <h4 className="font-bold text-white mb-4">{footerTexts.company}</h4>
                                 <ul className="space-y-2">
@@ -84,8 +84,8 @@ const Footer = () => {
                 </div> 
 
             </div>
-            <hr className="bg-gray-300" />
-            <div className="w-full flex justify-between items-center">
+            <hr className="bg-black" />
+            <div className="w-full flex flex-col-reverse gap-y-4 lg:flex-row justify-between items-center">
                 <div className="text-white text-sm w-fit">
                     {footerTexts.footerNote}
                 </div>

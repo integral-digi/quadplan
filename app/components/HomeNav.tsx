@@ -10,9 +10,9 @@ export const navItems = {
     logo: "/assets/quadplan.svg",
     links: [
         { name: "About", href: "/about" },
-        { name: "Blog", href: "#" },
+        { name: "Blog", href: "blog" },
         { name: "Cases", href: "/cases" },
-        { name: "Founders Deal", href: "#" },
+        { name: "Founders Deal", href: "founders-deal" },
     ],
     actions: [
         { name: "Contact Us", href: "/contact" },
@@ -21,7 +21,7 @@ export const navItems = {
 
 const HomeNav = () => {
     return (
-        <div className="justify-between flex items-center w-full px-24">
+        <div className="hidden justify-between lg:flex lg:items-center w-full px-24">
             <div className="w-[10%] text-sky-600 text-2xl font-bold">
                 <Link href="/" passHref>
                     <img src={navItems.logo} className="w-auto h-6" alt="logo" />

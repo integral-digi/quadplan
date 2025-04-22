@@ -1,16 +1,21 @@
 "use client";
+import { CheckCircleIcon } from "@heroicons/react/24/solid";
 import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 
 const proposalItems = {
-	title: "We Don't Just Build Apps",
-	info: "At Quadplan, we’re not just another dev studio—we’re your product’s strategic launch partner. From idea to interface, we specialize in crafting high-performance web and mobile applications that don’t just function, they lead markets, delight users, and scale with confidence. Whether you’re a startup founder with a groundbreaking idea, or a business leader ready to transform operations digitally—you’re in the right place",
+	title: "Your Technical Co‑Founder, On Demand",
+	info: [
+        "8+ years building high‑growth products for startups",
+        "Deep expertise: Next.js, React Native, Python, cloud infra",
+        "Proven process: Discovery → Design → Build → Scale",
+        "Trusted by 20+ funded startups and SMEs"
+    ],
 	buttonText: "Schedule Call Now",
-	firstImage: "/images/appone.png",
-	secondImage: "/images/apptwo.png"
+	firstImage: "/images/code.jpg",
 };
 
-const Proposal = () => {
+const Offer = () => {
 	// Define variants for text (left section) and images (right section)
 	const textVariants = {
 		hidden: { x: -50, opacity: 0 },
@@ -29,22 +34,27 @@ const Proposal = () => {
 			animate={{ opacity: 1 }}
 			transition={{ duration: 0.8 }}
 		>
-			<div className="flex items-center justify-between p-24">
+			<div className="flex flex-col space-y-32 lg:flex-row lg:items-center lg:justify-between px-4 lg:p-24">
 				{/* Left Section: Text and Button */}
 				<motion.div
-					className="space-y-16 w-[40%]"
+					className="space-y-16 w-full lg:w-[40%]"
 					initial="hidden"
 					whileInView="visible"
 					viewport={{ once: true }}
 					variants={textVariants}
 				>
 					<div className="space-y-8">
-						<h2 className="text-white text-[40px] font-bold">
+						<h2 className="text-white text-3xl lg:text-[40px] font-bold">
 							{proposalItems.title}
 						</h2>
-						<p className="font-normal text-white text-base">
-							{proposalItems.info}
-						</p>
+                        {proposalItems.info.map((info)=>(
+                            <div className="flex items-center-safe space-x-4">
+                                <CheckCircleIcon className="w-5 h-5 text-orange-300" />
+                                <p className="font-normal text-white text-base">
+                                    {info}
+                                </p>
+                            </div>
+                        ))}
 					</div>
 					<div className="flex items-center space-x-8">
 						<motion.button
@@ -89,24 +99,17 @@ const Proposal = () => {
 
 				{/* Right Section: Image Containers */}
 				<motion.div
-					className="flex space-x-6 w-[50%]"
+					className="w-full lg:w-[50%]"
 					initial="hidden"
 					whileInView="visible"
 					viewport={{ once: true }}
 					variants={imageVariants}
 				>
-					<div className="overflow-clip w-1/2 h-[600px] bg-indigo-300 rounded-tl-2xl rounded-bl-2xl relative">
+					<div className="overflow-clip w-full h-[600px] bg-indigo-300 rounded-tl-2xl rounded-bl-2xl relative">
 						<img
 							src={proposalItems.firstImage}
 							alt="app"
-							className="w-auto h-[480px] absolute -top-16 -left-8"
-						/>
-					</div>
-					<div className="overflow-clip w-1/2 h-[600px] bg-indigo-300 rounded-br-2xl rounded-tr-2xl relative">
-						<img
-							src={proposalItems.secondImage}
-							alt="app"
-							className="w-auto h-[480px] absolute -bottom-8 -right-8"
+							className="w-auto h-[600px]"
 						/>
 					</div>
 				</motion.div>
@@ -115,4 +118,4 @@ const Proposal = () => {
 	);
 };
 
-export default Proposal;
+export default Offer;

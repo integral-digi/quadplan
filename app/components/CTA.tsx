@@ -26,7 +26,7 @@ const CTA = () => {
 						}}
 					>
 						<div className="flex space-x-4 items-center w-full">
-							<p className="text-zinc-900 text-base">
+							<p className="text-zinc-900 text-base font-medium">
 								{ctaItems.buttonText}
 							</p>
 							<div className="rounded-full h-8 w-8 bg-red-500 flex items-center justify-around">
