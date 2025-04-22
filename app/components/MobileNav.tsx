@@ -22,7 +22,7 @@ const MobileNav: React.FC = () => {
                 <Popover data-popover-target="MenuTray">
                     <PopoverButton>
                         <section>
-                            <Bars2Icon className="text-slate-800 dark:text-white w-6 h-6" />
+                            <Bars2Icon className="text-white w-6 h-6" />
                         </section>
                     </PopoverButton>
                     <Transition

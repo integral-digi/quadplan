@@ -14,7 +14,7 @@ const CTA = () => {
             <div className="rounded-2xl bg-zinc-800/30">
                 <div className="space-y-8 p-12 justify-center items-center flex flex-col">
                     <img src={ctaItems.image} alt="ribbon" className="w-full animate-bounce" />
-                    <h2 className="text-4xl lg:text-6xl xl:text-[5rem] text-center font-bold">
+                    <h2 className="text-4xl lg:text-6xl xl:text-[5rem] text-center font-bold text-white">
                         {ctaItems.title}
                     </h2>
                     <motion.button 

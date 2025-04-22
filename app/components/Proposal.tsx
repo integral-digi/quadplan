@@ -95,18 +95,18 @@ const Proposal = () => {
 					viewport={{ once: true }}
 					variants={imageVariants}
 				>
-					<div className="overflow-clip w-1/2 h-[600px] bg-indigo-300 rounded-tl-2xl rounded-bl-2xl relative">
+					<div className="overflow-clip w-1/2 h-[24rem] lg:h-[600px] bg-indigo-300 rounded-tl-2xl rounded-bl-2xl relative">
 						<img
 							src={proposalItems.firstImage}
 							alt="app"
-							className="w-auto h-[480px] absolute -top-16 -left-8"
+							className="w-auto h-[20rem] lg:h-[480px] absolute -top-16 -left-8"
 						/>
 					</div>
-					<div className="overflow-clip w-1/2 h-[600px] bg-indigo-300 rounded-br-2xl rounded-tr-2xl relative">
+					<div className="overflow-clip w-1/2 h-[24rem] lg:h-[600px] bg-indigo-300 rounded-br-2xl rounded-tr-2xl relative">
 						<img
 							src={proposalItems.secondImage}
 							alt="app"
-							className="w-auto h-[480px] absolute -bottom-8 -right-8"
+							className="w-auto h-[20rem] lg:h-[480px] absolute -bottom-8 -right-8"
 						/>
 					</div>
 				</motion.div>

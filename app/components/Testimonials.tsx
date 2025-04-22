@@ -23,7 +23,7 @@ const Testimonials = () => {
 						{testimonialItems.subtitle}
 					</p>
 				</div>
-				<div className="overflow-x-hidden flex items-center justify-between space-x-6 w-full testimonial-section">
+				<div className="overflow-x-scroll flex items-center justify-between space-x-6 w-full testimonial-section scrollbar-hide">
 					{testimonialItems.singles.map((item)=>(
 						<div className="bg-zinc-800/30 rounded-2xl p-6 w-full min-w-96" key={item.id}>
 							<div className="space-y-5 w-full">

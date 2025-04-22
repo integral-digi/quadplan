@@ -1,6 +1,6 @@
 "use client";
 
-import React, { Fragment } from "react";
+import React from "react";
 import Head from "next/head";
 import {
 	Disclosure,
@@ -8,9 +8,9 @@ import {
 	DisclosurePanel,
 } from "@headlessui/react";
 import { PlusIcon } from "@heroicons/react/24/solid";
-import { AnimatePresence, motion, easeOut } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
-const homeFaqs = [
+const faqs = [
 	{
 		question: "What services does Quadplan offer?",
 		answer:
@@ -38,12 +38,11 @@ const homeFaqs = [
 	},
 ];
 
-export default function FAQSection({ faqs = homeFaqs }: any) {
-	// Build JSON‑LD for the FAQs
-	const faqJsonLd = {
+const FAQSection = () => {
+	const faqStructuredData = {
 		"@context": "https://schema.org",
 		"@type": "FAQPage",
-		"mainEntity": faqs.map((faq: any) => ({
+		"mainEntity": faqs.map((faq) => ({
 			"@type": "Question",
 			"name": faq.question,
 			"acceptedAnswer": {
@@ -54,40 +53,33 @@ export default function FAQSection({ faqs = homeFaqs }: any) {
 	};
 
 	return (
-		<Fragment>
-			{/* JSON‑LD ensures Google sees acceptedAnswer even if JS toggles panel */}
+		<>
+			{/* ✅ JSON-LD script placed directly in <Head> */}
 			<Head>
 				<script
 					type="application/ld+json"
-					dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+					dangerouslySetInnerHTML={{
+						__html: JSON.stringify(faqStructuredData),
+					}}
 				/>
 			</Head>
 
-			<section
-				className="w-full px-4 lg:px-24 mx-auto"
-				itemScope
-				itemType="https://schema.org/FAQPage"
-			>
+			<section className="w-full px-4 lg:px-24 mx-auto">
 				<h2 className="text-3xl lg:text-4xl font-bold mb-20">
 					Popular Questions
 				</h2>
+
 				<div className="space-y-12">
-					{faqs.map((faq: any, idx: number) => (
+					{faqs.map((faq, idx) => (
 						<Disclosure
 							key={idx}
 							as="div"
 							className="border-b border-gray-700 pb-12"
-							itemScope
-							itemType="https://schema.org/Question"
-							itemProp="mainEntity"
 						>
 							{({ open }) => (
 								<>
 									<DisclosureButton className="flex justify-between w-full text-left">
-										<span
-											className="text-xl lg:text-3xl font-bold"
-											itemProp="name"
-										>
+										<span className="text-xl lg:text-3xl font-bold text-white">
 											{faq.question}
 										</span>
 										<PlusIcon
@@ -103,17 +95,9 @@ export default function FAQSection({ faqs = homeFaqs }: any) {
 												initial={{ opacity: 0, y: -24 }}
 												animate={{ opacity: 1, y: 0 }}
 												exit={{ opacity: 0, y: -24 }}
-												style={{
-													transition: "opacity 0.5s ease-out, transform 0.5s ease-out",
-												}}
 												className="mt-8 text-gray-200"
-												itemScope
-												itemType="https://schema.org/Answer"
-												itemProp="acceptedAnswer"
 											>
-												<p itemProp="text" className="text-base font-normal">
-													{faq.answer}
-												</p>
+												<p className="text-base font-normal">{faq.answer}</p>
 											</DisclosurePanel>
 										)}
 									</AnimatePresence>
@@ -123,6 +107,8 @@ export default function FAQSection({ faqs = homeFaqs }: any) {
 					))}
 				</div>
 			</section>
-		</Fragment>
+		</>
 	);
-}
+};
+
+export default FAQSection;
