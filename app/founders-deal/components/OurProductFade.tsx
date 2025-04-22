@@ -3,9 +3,9 @@ import { CheckCircleIcon } from "@heroicons/react/24/solid";
 
 const OurProductFade = () => {
     return (
-        <section className="bg-orange-100 block p-8 lg:p-24 rounded-3xl space-y-24">
+        <section className="bg-orange-100 block p-4 md:p-8 lg:p-24 lg:space-y-0 rounded-3xl space-y-24">
             {pricing.map((single: PricingItem) => (
-                <>
+                <div className="w-full">
                     {single.id === 3 &&
                         <section key={single.id} className="space-y-3 w-full">
                             <section className="space-y-3">
@@ -36,7 +36,7 @@ const OurProductFade = () => {
                             </section>
                         </section>
                     }
-                </>
+                </div>
             ))}
         </section>
     )

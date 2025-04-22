@@ -32,6 +32,12 @@
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
+	<url>
+		<loc>https://www.quadplan.co/founders-deal</loc>
+		<lastmod>2025-04-22</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
 
 	<!-- Blog Posts -->
 	<url>
@@ -70,7 +76,6 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-	<!-- Add entries for ids 3–6 similarly -->
 
 	<!-- Portfolio / Case Studies -->
 	<url>

@@ -10,8 +10,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 
 	return (
 		<section className="w-full">
-			{product.id !== 3 &&
-				<section className="w-full p-6 space-y-6">
+			{id !== 3 &&
+				<section className="w-full px-4 lg:p-6 space-y-6">
 					<div className="space-y-2">
 						<h2 className="text-white font-bold text-3xl">{name}</h2>
 						<p className="text-white font-normal text-base">{description}</p>
