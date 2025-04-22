@@ -47,8 +47,8 @@ const Offer = () => {
 						<h2 className="text-white text-3xl lg:text-[40px] font-bold">
 							{proposalItems.title}
 						</h2>
-                        {proposalItems.info.map((info)=>(
-                            <div className="flex items-center-safe space-x-4">
+                        {proposalItems.info.map((info, index)=>(
+                            <div className="flex items-center-safe space-x-4" key={index}>
                                 <CheckCircleIcon className="w-5 h-5 text-orange-300" />
                                 <p className="font-normal text-white text-base">
                                     {info}
