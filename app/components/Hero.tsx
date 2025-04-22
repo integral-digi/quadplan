@@ -10,7 +10,7 @@ const heroItems = {
 };
 
 export const style = {
-	paragraph: "text-base text-white font-normal",
+	paragraph: "text-sm md:text-base text-white font-normal",
 };
 
 // Container variant: This will stagger its children.
@@ -42,7 +42,7 @@ const Hero = () => {
 			>
 				{/* Info */}
 				<motion.p
-					className={`text-center ${style.paragraph}`}
+					className={`text-center  ${style.paragraph}`}
 					variants={childVariants}
 				>
 					{heroItems.info}
@@ -50,7 +50,7 @@ const Hero = () => {
 
 				{/* Title & Subtitle */}
 				<motion.div className="space-y-6" variants={childVariants}>
-					<motion.h1 className="text-white text-center font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[80px]">
+					<motion.h1 className="text-white text-center font-black text-4xl sm:text-5xl md:text-6xl lg:text-[5rem] xl:text-[5rem]">
 						{heroItems.title}
 					</motion.h1>
 					<motion.p

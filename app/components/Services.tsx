@@ -57,7 +57,7 @@ const Services = () => {
 					{duplicateItems(serviceItems.rowOne).map((item, index) => (
 						<div
 							key={`rowOne-${index}`}
-							className="bg-zinc-800/30 rounded-2xl w-[45%] h-60 px-6 flex items-center justify-around flex-shrink-0"
+							className="bg-zinc-800/30 rounded-2xl w-full lg:w-[45%] h-60 px-6 flex items-center justify-around flex-shrink-0"
 						>
 							<div className="flex space-x-10 items-center">
 								<div className="w-[210px] h-[180px]">
@@ -68,7 +68,7 @@ const Services = () => {
 									/>
 								</div>
 								<div className="space-y-6 w-2/3">
-									<h3 className="text-white font-bold text-2xl">
+									<h3 className="text-white font-bold text-xl lg:text-2xl">
 										{item.title}
 									</h3>
 									<p className="text-base text-white font-normal">
@@ -90,7 +90,7 @@ const Services = () => {
 					{duplicateItems(serviceItems.rowTwo).map((item, index) => (
 						<div
 							key={`rowTwo-${index}`}
-							className="bg-zinc-800/30 rounded-2xl h-60 px-6 flex items-center justify-around w-[45%] flex-shrink-0"
+							className="bg-zinc-800/30 rounded-2xl h-60 px-6 flex items-center justify-around w-full lg:w-[45%] flex-shrink-0"
 						>
 							<div className="flex space-x-10 items-center">
 								<div className="w-[210px] h-[180px]">
@@ -101,7 +101,7 @@ const Services = () => {
 									/>
 								</div>
 								<div className="space-y-6 w-2/3">
-									<h3 className="text-white font-bold text-2xl">
+									<h3 className="text-white font-bold text-xl lg:text-2xl">
 										{item.title}
 									</h3>
 									<p className="text-base text-white font-normal">

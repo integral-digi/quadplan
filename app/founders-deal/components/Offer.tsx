@@ -44,11 +44,11 @@ const Offer = () => {
 					variants={textVariants}
 				>
 					<div className="space-y-8">
-						<h2 className="text-white text-3xl lg:text-[40px] font-bold">
+						<h2 className="text-white text-3xl lg:text-4xl font-bold">
 							{proposalItems.title}
 						</h2>
                         {proposalItems.info.map((info, index)=>(
-                            <div className="flex items-center-safe space-x-4" key={index}>
+                            <div className="flex items-start lg:items-center-safe space-x-4" key={index}>
                                 <CheckCircleIcon className="w-5 h-5 text-orange-300" />
                                 <p className="font-normal text-white text-base">
                                     {info}
@@ -67,7 +67,7 @@ const Offer = () => {
 							}}
 						>
 							<div className="flex space-x-4 items-center w-full">
-								<p className="text-zinc-900 text-base font-medium">
+								<p className="text-zinc-900 text-base font-medium text-nowrap">
 									{proposalItems.buttonText}
 								</p>
 								<div className="rounded-full h-8 w-8 bg-red-500 flex items-center justify-center">
@@ -85,10 +85,10 @@ const Offer = () => {
 							}}
 						>
 							<div className="flex space-x-4 items-center w-full">
-								<p className="text-white text-base">
+								<p className="text-white text-base font-medium text-nowrap">
 									Refer us
 								</p>
-								<div className="rounded-full h-8 w-8 bg-red-500 flex items-center justify-center">
+								<div className="hidden rounded-full h-8 w-8 bg-red-500 lg:flex items-center justify-center">
 									<ArrowUpRightIcon className="w-4 h-4 text-white" />
 								</div>
 							</div>

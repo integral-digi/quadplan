@@ -5,6 +5,7 @@ import MainCase from "./components/Main";
 import HomeNav from "@/app/components/HomeNav";
 import Footer from "@/app/components/Footer";
 import Tags from "./components/Tag";
+import MobileNav from "@/app/components/MobileNav";
 
 const CaseHome = () => {
     const { name } = useParams() as { name: string };
@@ -15,6 +16,7 @@ const CaseHome = () => {
         <div className="w-full bg-zinc-900">
             <div className="w-full space-y-32 py-12">
                 <HomeNav />
+                <MobileNav />
                 {/* <Tags project={project} /> */}
                 {project && <MainCase project={project} />}
                 <Footer />

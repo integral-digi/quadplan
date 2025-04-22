@@ -24,7 +24,7 @@ const MainCase = ({ project }: MainCaseProps) => {
 				{project.logo && (
 					<img src={project.logo} className="w-auto h-6" alt={project.name || "Project logo"} />
 				)}
-				<h1 className="text-4xl md:text-7xl text-white font-bold">{project.title}</h1>
+				<h1 className="text-4xl md:text-[5rem] text-white font-bold">{project.title}</h1>
 			</div>
 
 			{/* Project Details */}

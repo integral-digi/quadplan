@@ -10,11 +10,11 @@ const ctaItems = {
 
 const CTA = () => {
     return (
-        <div className="w-full px-24">
+        <div className="w-full px-4 lg:px-24">
             <div className="rounded-2xl bg-zinc-800/30">
                 <div className="space-y-8 p-12 justify-center items-center flex flex-col">
                     <img src={ctaItems.image} alt="ribbon" className="w-full animate-bounce" />
-                    <h2 className="text-[80px] text-center font-bold">
+                    <h2 className="text-4xl lg:text-6xl xl:text-[5rem] text-center font-bold">
                         {ctaItems.title}
                     </h2>
                     <motion.button 
@@ -26,7 +26,7 @@ const CTA = () => {
 						}}
 					>
 						<div className="flex space-x-4 items-center w-full">
-							<p className="text-zinc-900 text-base font-medium">
+							<p className="text-zinc-900 text-base font-medium text-nowrap">
 								{ctaItems.buttonText}
 							</p>
 							<div className="rounded-full h-8 w-8 bg-red-500 flex items-center justify-around">

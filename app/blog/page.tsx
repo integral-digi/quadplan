@@ -2,6 +2,7 @@ import HomeNav from "@/app/components/HomeNav"
 import ContentTray from "./components/ContentTray"
 import Footer from "@/app/components/Footer"
 import Head from "next/head"
+import MobileNav from "../components/MobileNav"
 
 const BlogHome = () => {
     return (
@@ -16,6 +17,7 @@ const BlogHome = () => {
             </Head>
             <div className="py-12 space-y-32">
                 <HomeNav />
+                <MobileNav />
                 <ContentTray />
                 <Footer />
             </div>

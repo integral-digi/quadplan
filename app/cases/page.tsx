@@ -5,6 +5,7 @@ import HomeNav from "@/app/components/HomeNav";
 import Footer from "@/app/components/Footer";
 import CaseGrid from "./components/CaseGrid";
 import Hero from "./components/Hero";
+import MobileNav from "@/app/components/MobileNav";
 
 const CasesHome = () => {
     const { name } = useParams() as { name: string };
@@ -15,6 +16,7 @@ const CasesHome = () => {
         <div className="w-full bg-zinc-900">
             <div className="w-full space-y-32 py-12">
                 <HomeNav />
+                <MobileNav />
                 <Hero />
                 <CaseGrid />
                 <Footer />

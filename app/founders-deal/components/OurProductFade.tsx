@@ -3,12 +3,12 @@ import { CheckCircleIcon } from "@heroicons/react/24/solid";
 
 const OurProductFade = () => {
     return (
-        <section className="bg-orange-100 block p-4 md:p-8 lg:p-24 lg:space-y-0 rounded-3xl space-y-24">
+        <section className="bg-orange-100 p-8 md:p-8 lg:p-16 lg:space-y-0 rounded-3xl">
             {pricing.map((single: PricingItem) => (
-                <div className="w-full">
+                <div className="w-full" key={single.id}>
                     {single.id === 3 &&
-                        <section key={single.id} className="space-y-3 w-full">
-                            <section className="space-y-3  w-full">
+                        <section key={single.id} className="space-y-6 w-full">
+                            <section className="space-y-3 w-full">
                                 <h2 className="text-gray-900 font-bold text-3xl">
                                     {single.name}
                                 </h2>
@@ -26,12 +26,12 @@ const OurProductFade = () => {
                             <section className="space-y-6">
                                 {single.features.map((feature: string, index: number) => (
                                     <section className="flex items-center space-x-4" key={index}>
-                                        <CheckCircleIcon className="w-4 h-4 text-zinc-900" />
+                                        <CheckCircleIcon className="w-5 h-5 text-zinc-900" />
                                         <p className="text-gray-900 font-normal">{feature}</p>
                                     </section>
                                 ))}
-                                <button className="justify-around border border-gray-900 rounded-3xl h-12 px-8 mt-4">
-                                    <p className="text-gray-900 text-base font-black hover:bg-orange-100 hover:text-gray-900">Purchase</p>
+                                <button className="cursor-pointer hover:bg-red-500 hover:text-white justify-around border border-gray-900 rounded-3xl h-12 px-8 mt-4">
+                                    <p className="text-gray-900 text-base font-bold hover:text-white">Purchase</p>
                                 </button>
                             </section>
                         </section>

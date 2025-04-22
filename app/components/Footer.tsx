@@ -42,7 +42,7 @@ const footerTexts = {
 
 const Footer = () => {
     return (
-        <div className="w-full space-y-12 flex flex-col justify-center items-center px-4 lg:px-24">
+        <div className="w-full space-y-12 flex flex-col justify-center items-center px-4 lg:px-24 overflow-hidden">
             <div className="w-full space-y-12 flex flex-col lg:flex-row lg:justify-between">
                 <div className="lg:w-[35%] w-full">
                     <div className="space-y-6">
@@ -84,7 +84,7 @@ const Footer = () => {
                 </div> 
 
             </div>
-            <hr className="bg-black" />
+            {/* <hr className="bg-black" /> */}
             <div className="w-full flex flex-col-reverse gap-y-4 lg:flex-row justify-between items-center">
                 <div className="text-white text-sm w-fit">
                     {footerTexts.footerNote}

@@ -70,7 +70,7 @@ const Principle = () => {
 						className="w-full md:w-1/3 h-80 md:h-96 relative bg-zinc-800/30 rounded-2xl overflow-hidden"
 					>
 						<div className="space-y-8 p-4 md:p-8">
-							<h3 className="text-white font-bold text-2xl md:text-[40px] w-[80%]">
+							<h3 className="text-white font-bold text-2xl lg:text-4xl w-full lg:w-[80%]">
 								{item.title}
 							</h3>
 							<p className={style.paragraph}>{item.subtitle}</p>
@@ -105,7 +105,7 @@ const Principle = () => {
 						} shadow-3xl rounded-2xl w-full md:w-1/2 h-80 md:h-96 relative overflow-hidden`}
 					>
 						<div className="space-y-8 p-4 md:p-8">
-							<h3 className="text-white font-bold text-xl md:text-[40px] w-1/2">
+							<h3 className="text-white font-bold text-2xl lg:text-4xl w-full lg:w-1/2">
 								{item.title}
 							</h3>
 							<p className={style.paragraph}>{item.subtitle}</p>

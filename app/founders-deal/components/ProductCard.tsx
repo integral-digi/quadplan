@@ -32,7 +32,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 							</div>
 						))}
 
-						<button className="mt-4 w-full h-12 px-8 border border-white rounded-3xl text-white font-black hover:bg-orange-100 hover:text-zinc-900 transition">
+						<button className="cursor-pointer mt-4 w-full h-12 px-8 border border-white rounded-3xl text-white font-black hover:bg-orange-100 hover:text-zinc-900 transition">
 							Purchase
 						</button>
 					</div>

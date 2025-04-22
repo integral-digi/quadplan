@@ -55,7 +55,7 @@ const Pillars = () => {
 						className="w-full md:w-1/3 h-80 md:h-96 relative bg-zinc-800/30 rounded-2xl overflow-hidden"
 					>
 						<div className="space-y-8 p-4 md:p-8">
-							<h3 className="text-white font-bold text-2xl md:text-[40px] w-3/4">
+							<h3 className="text-white font-bold text-2xl md:text-4xl w-3/4">
 								{item.title}
 							</h3>
 							<p className={style.paragraph}>{item.subtitle}</p>

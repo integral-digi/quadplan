@@ -4,6 +4,7 @@ import Footer from "@/app/components/Footer";
 import Hero from "./components/Hero";
 import CTA from "../components/CTA";
 import Pillars from "./components/Main";
+import MobileNav from "../components/MobileNav";
 
 
 const CasesHome = () => {
@@ -11,6 +12,7 @@ const CasesHome = () => {
         <div className="w-full bg-zinc-900">
             <div className="w-full space-y-32 py-12">
                 <HomeNav />
+                <MobileNav />
                 <Hero />
                 <Pillars />
                 <CTA />

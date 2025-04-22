@@ -40,7 +40,7 @@ const Hero = () => {
             >
                 {/* Title & Subtitle */}
                 <motion.div className="space-y-5" variants={childVariants}>
-                    <motion.h1 className="text-white text-center font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[80px]">
+                    <motion.h1 className="text-white text-center font-black text-4xl sm:text-5xl md:text-6xl lg:text-[5rem] xl:text-[5rem]">
                         {heroItems.title}
                     </motion.h1>
                     <motion.p

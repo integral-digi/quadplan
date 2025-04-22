@@ -4,6 +4,7 @@ import BlogPost from "./components/BlogPost";
 import HomeNav from "@/app/components/HomeNav";
 import Footer from "@/app/components/Footer";
 import { useContent } from "@/app/context/ContentContext";
+import MobileNav from "@/app/components/MobileNav";
 
 const ContentHome = () => {
     const params = useParams();
@@ -22,6 +23,7 @@ const ContentHome = () => {
     return (
         <div className="w-full gap-y-16 bg-white dark:bg-gray-900">
             <HomeNav />
+            <MobileNav />
             {post ? (
                 <BlogPost
                     thumbnail={post.thumbnail}

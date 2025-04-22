@@ -116,16 +116,16 @@ const Showcase = () => {
 
 	return (
 		<motion.section
-			className="w-full"
+			className="hidden lg:block w-full"
 			initial={{ opacity: 0 }}
 			whileInView={{ opacity: 1 }}
 			transition={{ delay: 0.5, duration: 0.8 }}
 			exit={{ opacity: 0 }}
 		>
-			<section className="space-y-16 px-20">
+			<section className="space-y-16 px-4 lg:px-20 ">
 				<Heading subtitle={scElements.subtitle.toLocaleUpperCase()} />
 				{/* Flex container for logos */}
-				<section className="flex items-center justify-between">
+				<section className="flex gap-8 flex-wrap lg:flex-row items-center lg:justify-between">
 					{currentLogos.map((logo, index) => (
 						// Each logo container. Using AnimatePresence so that exit and entry animations trigger only for replaced logos.
 						<div key={index} className="w-auto h-12 bg-transparent">
@@ -145,7 +145,7 @@ const Showcase = () => {
 									<img
 										src={logo.src}
 										alt={logo.name}
-										className={`w-auto ${logo.id === 1 ? "h-5" : "h-6"}`}
+										className={`w-auto ${logo.id === 1 ? "h-4 lg:h-5" : "h-5 lg:h-6"}`}
 									/>
 								</motion.div>
 							</AnimatePresence>

@@ -58,7 +58,7 @@ const InvestSection = () => {
                 >
                     <div className="space-y-16 lg:space-y-32">
                         <div className="space-y-8">
-                            <p className="text-white text-3xl lg:text-[40px] font-bold">
+                            <p className="text-white text-3xl lg:text-4xl font-bold">
                                 {investItems.subtitle}
                             </p>
                             <h2 className={`lw-full g:w-1/2 ${style.paragraph}`}>
@@ -84,7 +84,7 @@ const InvestSection = () => {
                                     className="w-full md:w-1/3 h-80 md:h-96 relative bg-zinc-800/30 rounded-2xl overflow-hidden"
                                 >
                                     <div className="space-y-8 p-8 md:p-8">
-                                        <h3 className="text-white font-bold text-2xl md:text-[40px] w-full">
+                                        <h3 className="text-white font-bold text-2xl md:text-4xl w-full">
                                             {item.title}
                                         </h3>
                                         <p className={style.paragraph}>{item.subtitle}</p>
@@ -110,7 +110,7 @@ const InvestSection = () => {
                                 }}
                             >
                                 <div className="flex space-x-4 items-center w-full">
-                                    <p className="text-zinc-900 text-base font-medium">
+                                    <p className="text-zinc-900 text-base font-medium text-nowrap">
                                         {investItems.buttonItems.text}
                                     </p>
                                     <div className="rounded-full h-8 w-8 bg-red-500 flex items-center justify-center">

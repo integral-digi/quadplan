@@ -72,7 +72,7 @@ const FallDiv = () => {
 			>
 				{/* Title Section */}
 				<div className="w-full md:w-2/3 mb-8">
-					<h2 className="text-white text-2xl md:text-[40px] font-bold leading-tight">
+					<h2 className="text-white text-4xl md:text-4xl font-bold leading-tight">
 						{fdItems.title}
 					</h2>
 				</div>
@@ -106,7 +106,7 @@ const FallDiv = () => {
 									ease: "easeInOut",
 								}}
 							>
-								<p className="text-white text-4xl font-bold text-center">
+								<p className="text-white text-xl lg:text-4xl font-bold text-center">
 									{item}
 								</p>
 							</motion.div>

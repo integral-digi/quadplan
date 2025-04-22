@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { projectData } from "./Projects";
 import Featured from "./Featured";
+import { useRouter } from "next/navigation";
 
 // Variants for the overall card animation on entry
 const cardVariants = {
@@ -25,20 +26,23 @@ const overlayVariants = {
 };
 
 const Cases = () => {
+	const router = useRouter();
+
 	const selectedProjects = projectData.slice(0, 3);
 	return (
-		<section className="w-full space-y-8 p-24">
+		<section className="w-full space-y-8 p-4 lg:p-24">
 			<Featured />
-			<section className="w-full grid items-center grid-cols-3 gap-6">
+			<section className="w-full grid grid-cols-1 lg:grid-cols-3 items-center gap-6 overflow-hidden">
 				{selectedProjects.map((project) => (
 					<motion.section
 						key={project.id}
-						className="relative"
+						className="relative w-full"
 						variants={cardVariants}
 						initial="hidden"
 						whileInView="visible"
 						viewport={{ once: true, amount: 0.3 }}
 						whileHover={{ scale: 1.05, transition: { duration: 0.8 } }}
+						onClick={() => router.push(`/cases/${project.name}`)}
 					>
 						{/* Animated overlay for creative effect */}
 						<motion.div

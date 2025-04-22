@@ -16,7 +16,7 @@ const Testimonials = () => {
 		<div className="w-full">
 			<div className="lg:px-24 px-4 space-y-16 relative">
 				<div className="space-y-6">
-					<h2 className="text-white font-bold text-2xl lg:text-[40px]">
+					<h2 className="text-white font-bold text-2xl lg:text-4xl">
 						{testimonialItems.title}
 					</h2>
 					<p className="text-white font-normal text-base">
@@ -25,7 +25,7 @@ const Testimonials = () => {
 				</div>
 				<div className="overflow-x-hidden flex items-center justify-between space-x-6 w-full testimonial-section">
 					{testimonialItems.singles.map((item)=>(
-						<div className="bg-zinc-800/30 rounded-2xl p-6 w-full" key={item.id}>
+						<div className="bg-zinc-800/30 rounded-2xl p-6 w-full min-w-96" key={item.id}>
 							<div className="space-y-5 w-full">
 								<img src="/assets/quote.svg" alt="quote" className="h-8 w-auto" />
 								<p className="text-white font-normal text-base">
@@ -41,10 +41,10 @@ const Testimonials = () => {
 											/>
 										</div>
 										<div className="space-y-1">
-											<p className="text-lg text-white font-normal">
+											<p className="text-base lg:text-lg text-white font-normal">
 												{item.author.name}
 											</p>
-											<p className="text-base text-white font-normal">
+											<p className="text-sm lg:text-base text-white font-normal">
 												{item.author.company}
 											</p>
 										</div>
@@ -52,7 +52,7 @@ const Testimonials = () => {
 									<img
 										src="/assets/star.svg"
 										alt="rating"
-										className="w-36 h-6"
+										className="w-auto h-4 lg:h-6"
 									/>
 								</div>
 							</div>

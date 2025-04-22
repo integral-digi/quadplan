@@ -6,6 +6,7 @@ import FAQSection from "./components/FAQ";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import HomeNav from "./components/HomeNav";
+import MobileNav from "./components/MobileNav";
 import Principle from "./components/Principle";
 import Proposal from "./components/Proposal";
 import Services from "./components/Services";
@@ -81,8 +82,9 @@ const Home = () => {
 				/>
 			</Head>
 
-			<div className="w-full space-y-40 py-8">
+			<div className="w-full space-y-24 lg:space-y-40 py-8">
 				<HomeNav />
+				<MobileNav />
 				<div className="flex items-center justify-center">
 					<Hero />
 				</div>

@@ -29,17 +29,17 @@ const Proposal = () => {
 			animate={{ opacity: 1 }}
 			transition={{ duration: 0.8 }}
 		>
-			<div className="flex items-center justify-between p-24">
+			<div className="flex flex-col space-y-24 lg:flex-row lg:items-center lg:justify-between p-4 lg:p-24 w-full">
 				{/* Left Section: Text and Button */}
 				<motion.div
-					className="space-y-16 w-[40%]"
+					className="space-y-16 w-full lg:w-[40%]"
 					initial="hidden"
 					whileInView="visible"
 					viewport={{ once: true }}
 					variants={textVariants}
 				>
 					<div className="space-y-8">
-						<h2 className="text-white text-[40px] font-bold">
+						<h2 className="text-white text-4xl font-bold">
 							{proposalItems.title}
 						</h2>
 						<p className="font-normal text-white text-base">
@@ -57,7 +57,7 @@ const Proposal = () => {
 							}}
 						>
 							<div className="flex space-x-4 items-center w-full">
-								<p className="text-zinc-900 text-base font-medium">
+								<p className="text-zinc-900 text-base font-medium text-nowrap">
 									{proposalItems.buttonText}
 								</p>
 								<div className="rounded-full h-8 w-8 bg-red-500 flex items-center justify-center">
@@ -78,7 +78,7 @@ const Proposal = () => {
 								<p className="text-white text-base">
 									Refer us
 								</p>
-								<div className="rounded-full h-8 w-8 bg-red-500 flex items-center justify-center">
+								<div className="hidden rounded-full h-8 w-8 bg-red-500 lg:flex items-center justify-center">
 									<ArrowUpRightIcon className="w-4 h-4 text-white" />
 								</div>
 							</div>
@@ -89,7 +89,7 @@ const Proposal = () => {
 
 				{/* Right Section: Image Containers */}
 				<motion.div
-					className="flex space-x-6 w-[50%]"
+					className="flex space-x-6 w-full lg:w-[50%]"
 					initial="hidden"
 					whileInView="visible"
 					viewport={{ once: true }}

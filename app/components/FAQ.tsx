@@ -44,7 +44,7 @@ export default function FAQSection({ faqs=homeFaqs }: any) {
 			itemScope
 			itemType="https://schema.org/FAQPage"
 		>
-			<h2 className="text-3xl lg:text-5xl font-bold mb-20">Frequently Asked Questions</h2>
+			<h2 className="text-3xl lg:text-4xl font-bold mb-20">Popular Questions</h2>
 			<div className="space-y-12">
 				{faqs.map((faq: any, idx: number) => (
 					<Disclosure
