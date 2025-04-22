@@ -1,7 +1,7 @@
 "use client"
 import { Fragment } from "react";
 import { Popover, PopoverButton, PopoverPanel, Transition } from "@headlessui/react";
-import { Bars3Icon } from "@heroicons/react/24/solid";
+import { Bars2Icon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,7 +13,7 @@ const MobileNav: React.FC = () => {
                     <Link href="/" passHref>
                         <Image
                             src={ "/assets/quadplan.svg" }
-                            alt="tractpay" 
+                            alt="quadplan" 
                             width={ 120 }
                             height={ 24  }
                         />
@@ -22,7 +22,7 @@ const MobileNav: React.FC = () => {
                 <Popover data-popover-target="MenuTray">
                     <PopoverButton>
                         <section>
-                            <Bars3Icon className="text-slate-800 dark:text-white w-6 h-6" />
+                            <Bars2Icon className="text-slate-800 dark:text-white w-6 h-6" />
                         </section>
                     </PopoverButton>
                     <Transition
