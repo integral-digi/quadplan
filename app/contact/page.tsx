@@ -7,7 +7,7 @@ import Hero from "./components/Hero";
 
 const ContactHome = () => {
     return (
-        <div className="space-y-16 lg:space-y-40 w-full py-12">
+        <div className="space-y-16 lg:space-y-40 w-full py-12 bg-zinc-900">
             <HomeNav />
             <MobileNav />
             <div className="px-4 lg:px-24 w-full">
