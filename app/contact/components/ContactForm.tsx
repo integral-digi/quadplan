@@ -81,7 +81,7 @@ const ContactForm = () => {
 								type="text"
 								name="user_name"
 								required
-								className="mt-2 w-full h-12 px-4 bg-transparent border border-white/5 rounded-md"
+								className="mt-2 w-full h-12 px-4 bg-transparent text-white border border-white/5 rounded-md"
 								placeholder="John Doe"
 							/>
 						</fieldset>
@@ -91,7 +91,7 @@ const ContactForm = () => {
 								type="email"
 								name="user_email"
 								required
-								className="mt-2 w-full h-12 px-4 bg-transparent border border-white/5 rounded-md"
+								className="mt-2 w-full h-12 px-4 bg-transparent text-white border border-white/5 rounded-md"
 								placeholder="johndoe@example.com"
 							/>
 						</fieldset>
@@ -104,7 +104,7 @@ const ContactForm = () => {
 							<input
 								type="tel"
 								name="user_phone"
-								className="mt-2 w-full h-12 px-4 bg-transparent border border-white/5 rounded-md"
+								className="mt-2 w-full h-12 px-4 bg-transparent text-white border border-white/5 rounded-md"
 								placeholder="+1 123 456 7890"
 							/>
 						</fieldset>
@@ -118,7 +118,7 @@ const ContactForm = () => {
 							/>
 							<Listbox value={selectedBudget} onChange={setSelectedBudget}>
 								<div className="relative mt-4">
-									<ListboxButton className="relative w-full h-12 pl-4 pr-10 text-left bg-transparent border border-white/5 rounded-md cursor-pointer">
+									<ListboxButton className="relative w-full h-12 pl-4 pr-10 text-left bg-transparent text-white border border-white/5 rounded-md cursor-pointer">
 										<span className="block truncate text-white">{selectedBudget.label}</span>
 										<span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
 											<ChevronUpDownIcon className="w-5 h-5 text-white/60" />
