@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 const heroItems = {
 	info: "Software Design & Development Agency Based in Lagos Nigeria",
@@ -32,6 +33,7 @@ const childVariants = {
 };
 
 const Hero = () => {
+	const router = useRouter();
 	return (
 		<div className="w-full flex items-center justify-center px-4 py-12">
 			<motion.div
@@ -63,9 +65,10 @@ const Hero = () => {
 
 				{/* Button */}
 				<motion.button
-					className="cursor-pointer px-6 h-16 bg-white rounded-full text-zinc-900 font-bold w-fit mx-auto"
+					className="cursor-pointer px-6 h-12 lg:h-16 bg-white rounded-full text-zinc-900 font-bold w-fit mx-auto"
 					variants={childVariants}
 					whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
+					onClick={()=>router.push("/contact")}
 				>
 					{heroItems.buttonText}
 				</motion.button>

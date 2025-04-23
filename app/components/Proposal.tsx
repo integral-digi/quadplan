@@ -1,6 +1,7 @@
 "use client";
 import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 const proposalItems = {
 	title: "We Don't Just Build Apps",
@@ -11,6 +12,7 @@ const proposalItems = {
 };
 
 const Proposal = () => {
+	const router = useRouter();
 	// Define variants for text (left section) and images (right section)
 	const textVariants = {
 		hidden: { x: -50, opacity: 0 },
@@ -29,7 +31,7 @@ const Proposal = () => {
 			animate={{ opacity: 1 }}
 			transition={{ duration: 0.8 }}
 		>
-			<div className="flex flex-col space-y-24 lg:flex-row lg:items-center lg:justify-between p-4 lg:p-24 w-full">
+			<div className="flex flex-col space-y-16 lg:flex-row lg:items-center lg:justify-between p-4 lg:p-24 w-full">
 				{/* Left Section: Text and Button */}
 				<motion.div
 					className="space-y-16 w-full lg:w-[40%]"
@@ -55,6 +57,7 @@ const Proposal = () => {
 								scale: 1.01,
 								transition: { duration: 0.3 }
 							}}
+							onClick={()=>router.push("/contact")}
 						>
 							<div className="flex space-x-4 items-center w-full">
 								<p className="text-zinc-900 text-base font-medium text-nowrap">

@@ -65,7 +65,7 @@ const FAQSection = () => {
 			</Head>
 
 			<section className="w-full px-4 lg:px-24 mx-auto">
-				<h2 className="text-3xl lg:text-4xl font-bold mb-20">
+				<h2 className="text-3xl lg:text-4xl font-bold text-white mb-20">
 					Popular Questions
 				</h2>
 

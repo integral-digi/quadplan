@@ -50,14 +50,14 @@ const Services = () => {
 			<div className="space-y-8 w-full">
 				{/* Row One: Left-to-Right */}
 				<motion.div
-					className="flex space-x-8"
+					className="flex space-x-8 w-full"
 					animate={{ x: ["-50%", "0%"] }}
 					transition={{ ease: "linear", duration: duration, repeat: Infinity }}
 				>
 					{duplicateItems(serviceItems.rowOne).map((item, index) => (
 						<div
 							key={`rowOne-${index}`}
-							className="bg-zinc-800/30 rounded-2xl w-full lg:w-[45%] h-60 px-6 flex items-center justify-around flex-shrink-0"
+							className="bg-zinc-800/30 rounded-2xl w-full min-w-[36rem] lg:w-[45%] h-60 px-6 flex items-center justify-around flex-shrink-0"
 						>
 							<div className="flex space-x-10 items-center">
 								<div className="w-[210px] h-[180px]">
@@ -90,7 +90,7 @@ const Services = () => {
 					{duplicateItems(serviceItems.rowTwo).map((item, index) => (
 						<div
 							key={`rowTwo-${index}`}
-							className="bg-zinc-800/30 rounded-2xl h-60 px-6 flex items-center justify-around w-full lg:w-[45%] flex-shrink-0"
+							className="bg-zinc-800/30 rounded-2xl h-60 px-6 flex items-center justify-around w-full min-w-[36rem] lg:w-[45%] flex-shrink-0"
 						>
 							<div className="flex space-x-10 items-center">
 								<div className="w-[210px] h-[180px]">

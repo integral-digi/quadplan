@@ -15,7 +15,7 @@ const ContentTray: React.FC = () => {
     const { items } = content;
 
     return (
-        <div className="w-full space-y-8 pb-12 px-24">
+        <div className="w-full space-y-8 pb-12 px-4 lg:px-24">
             {items.length === 0 ? (
                 <section className="pt-8">
                     <EmptyTray />
@@ -25,7 +25,7 @@ const ContentTray: React.FC = () => {
                     {items.map((item: any) => (
                         <section
                             key={item.id}
-                            className="cursor-pointer w-[31.7%] min-h-[30rem] xll:h-max xll:w-full border border-sky-200/20 rounded-2xl hover:bg-[rgba(0,56,255,0.05)] hover:scale-105 transition-transform duration-300 overflow-hidden"
+                            className="cursor-pointer lg:w-[31.7%] min-h-[30rem] h-max w-full border border-sky-200/20 rounded-2xl hover:bg-[rgba(0,56,255,0.05)] hover:scale-105 transition-transform duration-300 overflow-hidden"
                             onClick={() => router.push(`/blog/${item.id}`)}
                         >
                             <div className="p-5 space-y-6">

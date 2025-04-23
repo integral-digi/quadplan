@@ -1,21 +1,18 @@
 import Link from "next/link";
 
 const footerTexts = {
-    logo: "/assets/logomark.svg",
-    buttonImg: [
-      { id: 1, name: "apple", img: "/assets/appstore.svg", href: "#" },
-      { id: 2, name: "google", img: "/assets/playstore.svg", href: "#" }
-    ],
+    logo: "/assets/quadplan.svg",
+
     stayInTheLoop: "Stay in the loop",
     mailingList: "Join our mailing list and stay up to date on features and product updates.",
     subscribe: "Subscribe",
     privacyPolicy: "Privacy Policy",
     company: "Menu",
     companyItems: [
-      { text: "About us", href: "#" },
-      { text: "Blog", href: "#" },
+      { text: "About us", href: "about" },
+      { text: "Blog", href: "blog" },
+      { text: "Cases", href: "#" },
       { text: "Careers", href: "#" },
-      { text: "Security", href: "#" },
       { text: "Newsroom", href: "#" },
     ],
     product: "Services",

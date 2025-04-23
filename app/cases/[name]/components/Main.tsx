@@ -18,7 +18,7 @@ const MainCase = ({ project }: MainCaseProps) => {
 	if (!project) return null;
 
 	return (
-		<div className="w-full px-6 md:px-24 space-y-24">
+		<div className="w-full px-6 md:px-24 space-y-16">
 			{/* Header Section */}
 			<div className="space-y-12">
 				{project.logo && (

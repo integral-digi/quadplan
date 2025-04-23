@@ -15,8 +15,8 @@ const Featured = () => {
 
 	return (
 		<div 
-			onClick={() => router.push(`/cases/${featuredCase.name}`)}
-			className="lg:h-[1080px] h-full bg-indigo-300 px-8 py-12 rounded-2xl bg-[url('/images/case-bg.jpg')] bg-cover bg-center w-full"
+			onClick={() => router.push(`/cases/${featuredCase.name.toLowerCase()}`)}
+			className="cursor-pointer lg:h-[812px] h-full bg-indigo-300 px-8 py-12 rounded-2xl bg-[url('/images/case-bg.jpg')] bg-cover bg-center w-full"
 		>
 			<div className="space-y-32 max-w-6xl mx-auto">
 				<div className="flex lg:flex-row items-center justify-between">

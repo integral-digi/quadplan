@@ -1,6 +1,7 @@
 "use client"
 import { ArrowUpRightIcon } from "@heroicons/react/24/solid"
 import { motion } from "framer-motion"
+import { useRouter } from "next/navigation"
 
 const ctaItems = {
     title: "Ready to Build Something Incredible?",
@@ -9,6 +10,7 @@ const ctaItems = {
 }
 
 const CTA = () => {
+    const router = useRouter();
     return (
         <div className="w-full px-4 lg:px-24">
             <div className="rounded-2xl bg-zinc-800/30">
@@ -24,6 +26,7 @@ const CTA = () => {
 							scale: 1.01,
 							transition: { duration: 0.3 }
 						}}
+                        onClick={()=>router.push("/contact")}
 					>
 						<div className="flex space-x-4 items-center w-full">
 							<p className="text-zinc-900 text-base font-medium text-nowrap">

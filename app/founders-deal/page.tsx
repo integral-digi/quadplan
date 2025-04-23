@@ -94,7 +94,7 @@ const FounderHome = () => {
 				/>
 			</Head>
 
-			<div className="w-full space-y-16 lg:space-y-32 py-12">
+			<div className="w-full space-y-16 lg:space-y-32 py-12 bg-zinc-900">
 				<HomeNav />
 				<MobileNav />
 				<Hero />

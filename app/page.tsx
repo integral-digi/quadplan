@@ -82,7 +82,7 @@ const Home = () => {
 				/>
 			</Head>
 
-			<div className="w-full space-y-24 lg:space-y-40 py-8">
+			<div className="w-full space-y-16 lg:space-y-40 py-8">
 				<HomeNav />
 				<MobileNav />
 				<div className="flex items-center justify-center">

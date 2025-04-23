@@ -36,13 +36,13 @@ const Cases = () => {
 				{selectedProjects.map((project) => (
 					<motion.section
 						key={project.id}
-						className="relative w-full"
+						className="relative w-full cursor-pointer"
 						variants={cardVariants}
 						initial="hidden"
 						whileInView="visible"
 						viewport={{ once: true, amount: 0.3 }}
 						whileHover={{ scale: 1.05, transition: { duration: 0.8 } }}
-						onClick={() => router.push(`/cases/${project.name}`)}
+						onClick={() => router.push(`/cases/${project.name.toLowerCase()}`)}
 					>
 						{/* Animated overlay for creative effect */}
 						<motion.div
