@@ -41,37 +41,37 @@
 
 	<!-- Blog Posts -->
 	<url>
-		<loc>https://www.quadplan.co/blog/1</loc>
+		<loc>https://www.quadplan.co/blog/the-ultimate-guide-to-building-an-mvp-from-idea-to-launch</loc>
 		<lastmod>2025-04-15</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>https://www.quadplan.co/blog/2</loc>
+		<loc>https://www.quadplan.co/blog/why-design-thinking-is-rucial-for-successful-apps</loc>
 		<lastmod>2025-04-10</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>https://www.quadplan.co/blog/3</loc>
+		<loc>https://www.quadplan.co/blog/top-seven-ui-ux-trends-you-cant-ignore-in-2025</loc>
 		<lastmod>2025-04-10</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>https://www.quadplan.co/blog/4</loc>
+		<loc>https://www.quadplan.co/blog/how-to-choose-the-right-tech-stack-for-your-web-app</loc>
 		<lastmod>2025-04-10</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>https://www.quadplan.co/blog/5</loc>
+		<loc>https://www.quadplan.co/blog/agile-vs-waterfall-which-methodology-wins-for-startups</loc>
 		<lastmod>2025-04-10</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>https://www.quadplan.co/blog/6</loc>
+		<loc>https://www.quadplan.co/blog/maximizing-user-engagement-best-practices-for-onboarding-flows</loc>
 		<lastmod>2025-04-10</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>

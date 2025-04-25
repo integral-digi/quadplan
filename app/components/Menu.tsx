@@ -20,7 +20,7 @@ const Menu = () => {
     const router = useRouter();
     
     return (
-        <section className="bg-zinc-950 w-full h-full min-h-screen z-50">
+        <section className="bg-zinc-900 w-full h-full min-h-screen z-50">
             <section className="space-y-32 py-16 px-8 ">
                 <section className="flex items-center justify-between">
                     <img src="/assets/quadplan.svg" className="w-auto h-5" alt="logo" />
