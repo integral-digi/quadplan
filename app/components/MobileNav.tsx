@@ -4,6 +4,7 @@ import { Popover, PopoverButton, PopoverPanel, Transition } from "@headlessui/re
 import { Bars2Icon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import Link from "next/link";
+import Menu from "./Menu";
 
 const MobileNav: React.FC = () => {
     return (
@@ -34,7 +35,7 @@ const MobileNav: React.FC = () => {
                         leaveFrom="opacity-100 translate-y-0"
                         leaveTo="opacity-0 translate-y-1">
                         <PopoverPanel id="MenuTray" className="top-0 left-0 w-full z-50 overflow-y-scroll fixed">
-                            {/* <MenuTray isDark={isDark} handleDark={handleDark} /> */}
+                            <Menu />
                         </PopoverPanel>
                     </Transition>
                 </Popover>

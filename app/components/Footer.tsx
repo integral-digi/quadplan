@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const footerTexts = {
+export const footerTexts = {
     logo: "/assets/quadplan.svg",
 
     stayInTheLoop: "Stay in the loop",
@@ -26,11 +26,11 @@ const footerTexts = {
     ],
     social: "Social",
     socials: [
-      { text: "Dribbble", href: "https://dribbble.com/quadplan" },
-      { text: "LinkedIn", href: "https://linkedin.com/company/quadplan" },
-      { text: "Instagram", href: "https://instagram.com/thequadplan" },
-      { text: "Twitter", href: "https://twitter.com/thequadplan" },
-      { text: "Facebook", href: "https://facebook.com/quadplan" }
+      { id: 1, icon: "/assets/dribbble.svg", text: "Dribbble", href: "https://dribbble.com/quadplan" },
+      { id: 2, icon: "/assets/linkedin.svg", text: "LinkedIn", href: "https://linkedin.com/company/quadplan" },
+      { id: 3, icon: "/assets/instagram.svg", text: "Instagram", href: "https://instagram.com/thequadplan" },
+      { id: 4, icon: "/assets/x.svg", text: "Twitter", href: "https://twitter.com/thequadplan" },
+      { id: 5, icon: "/assets/facebook.svg", text: "Facebook", href: "https://facebook.com/quadplan" }
     ],
 
     footerNote: "© 2025 Quadplan. All rights reserved.",

@@ -7,7 +7,7 @@ const ContentTraySkeleton = () => {
                 {placeholderItems.map((_, index) => (
                     <div
                         key={index}
-                        className="w-[31.7%] min-h-[30rem] xll:w-full border border-sky-200/20 rounded-2xl animate-pulse bg-[rgba(255,255,255,0.05)]"
+                        className="lg:w-[31.7%] min-h-[30rem] w-full border border-sky-200/20 rounded-2xl animate-pulse bg-[rgba(255,255,255,0.05)]"
                     >
                         <div className="p-5 space-y-6">
                             <div className="w-full h-52 bg-slate-700 rounded-lg" />
