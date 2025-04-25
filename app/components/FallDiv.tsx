@@ -1,5 +1,6 @@
 "use client";
 import { motion, useInView } from "framer-motion";
+import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 
 const fdItems = {
@@ -13,7 +14,12 @@ const fdItems = {
 		"Illustration",
 		"Branding",
 	],
-	buttonText: "Refer Us"
+	buttonText: "Refer Us",
+	awards: [
+		{ name: "goodfirm", icon: "/assets/goodfirm.svg", text: "Top App Development Company", link: "https://goodfirm.com/company/quadplan" },
+		{ name: "fiverr", icon: "/assets/fiverr-icon.svg", text: "40+ Projects Devlivered", link: "https://fiverr.com/eze-trust" }
+	]
+
 };
 
 const FallDiv = () => {
@@ -71,14 +77,30 @@ const FallDiv = () => {
 				ref={containerRef}
 			>
 				{/* Title Section */}
-				<div className="w-full md:w-2/3 mb-8">
+				<div className="w-full md:w-2/3 mb-8 space-y-24 lg:space-y-32">
 					<h2 className="text-white text-4xl md:text-4xl font-bold leading-tight">
 						{fdItems.title}
 					</h2>
+					<div className="w-full flex items-center space-x-8 pb-12">
+						{fdItems.awards.map((award, index) => (
+							<Link href={award.link} target="_blank" passHref key={index}>
+								<div className="w-36 lg:w-48 flex flex-col items-center justify-center space-y-4">
+									<img 
+										src={award.icon} 
+										alt={award.name} 
+										className="w-16 lg:w-40 h-auto" 
+									/>
+									<p className="text-white text-center text-sm lg:text-lg font-medium">
+										{award.text}
+									</p>
+								</div>
+							</Link>
+						))}
+					</div>
 				</div>
 
 				{/* Falling elements container */}
-				<div className="w-full h-[400px] md:h-[440px] relative overflow-hidden -mt-8 md:-mt-16">
+				<div className="hidden lg:block w-full h-[400px] md:h-[440px] relative overflow-hidden -mt-8 md:-mt-60">
 					{fdItems.anims.map((item, index) => {
 						// Get precomputed animation values for this element.
 						const { finalX, finalY, randomRotate } = animatedProps[index];
