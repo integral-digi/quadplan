@@ -4,14 +4,14 @@ import Link from "next/link";
 const CaseGrid = () => {
     return (
         <div className="w-full">
-            <div className="flex flex-wrap gap-8 w-full px-24">
+            <div className="flex flex-wrap gap-8 w-full px-4 lg:px-24">
                 {projectData.map((project)=>(
                     <Link 
                         key={project.id} 
                         href={`/cases/${project.name.toLowerCase()}`} 
                         passHref
                         target="_blank"
-                        className="cursor-pointer w-[31.7%] min-h-[20rem] xll:h-max xll:w-full border border-sky-200/20 rounded-2xl hover:bg-[rgba(0,56,255,0.05)] hover:scale-105 transition-transform duration-300 overflow-hidden"
+                        className="cursor-pointer lg:w-[31.7%] min-h-[20rem] h-max w-full border border-sky-200/20 rounded-2xl hover:bg-[rgba(0,56,255,0.05)] hover:scale-105 transition-transform duration-300 overflow-hidden"
                     >
                         <div>
                             <div className="space-y-12 p-8 w-full">

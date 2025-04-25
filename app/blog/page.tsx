@@ -16,7 +16,7 @@ const BlogHome = () => {
                 <meta property="og:type" content="website" />                          
                 <meta name="theme-color" content="#EF4136" />
             </Head>
-            <div className="py-12 space-y-32">
+            <div className="space-y-32">
                 <HomeNav />
                 <MobileNav />
                 <ContentTray />
