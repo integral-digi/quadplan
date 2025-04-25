@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ContentProvider } from "./context/ContentContext";
 import Script from "next/script";
+import { ChaportChat } from "./components/Chaport";
 
 export const metadata: Metadata = {
 	title: "Quadplan - Custom Software & Product Design for Ambitious Startups",
@@ -56,6 +57,7 @@ export default function RootLayout({
 			>
 				<ContentProvider>
 					{children}
+					<ChaportChat />
 				</ContentProvider>
 			</body>
 		</html>
