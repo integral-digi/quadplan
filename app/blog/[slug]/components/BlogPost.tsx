@@ -25,7 +25,7 @@ const BlogPost: React.FC<BlogPostProps> = ({
 			{thumbnail && (
 				<div className="w-full h-96 relative rounded-xl overflow-hidden">
 					<Image
-						src={thumbnail}
+						src={thumbnail || "/images/blog/blog-img.jpg"}
 						alt={title}
 						fill
 						className="object-cover"

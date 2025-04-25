@@ -3,6 +3,7 @@ import ContentTray from "./components/ContentTray"
 import Footer from "@/app/components/Footer"
 import Head from "next/head"
 import MobileNav from "../components/MobileNav"
+import Hero from "./components/Hero"
 
 const BlogHome = () => {
     return (
@@ -16,9 +17,10 @@ const BlogHome = () => {
                 <meta property="og:type" content="website" />                          
                 <meta name="theme-color" content="#EF4136" />
             </Head>
-            <div className="space-y-32">
+            <div className="space-y-16">
                 <HomeNav />
                 <MobileNav />
+                <Hero />
                 <ContentTray />
                 <Footer />
             </div>
