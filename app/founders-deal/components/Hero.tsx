@@ -1,9 +1,11 @@
 "use client";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const heroItems = {
     buttonText: "Start your Free Consultation",
-    title: "What If You Could Hire a CTO Without Hiring a CTO?",
+    path: "https://calendly.com/hello-quadplan/30min",
+    title: "20 hours of CTO-level guidance and dev support per month, for one flat fee.",
     subtitle:
         "Join Quadplan’s Founder’s Deal: Get affordable on‑demand CTO expertise, product leadership, and code delivery—all for a predictable monthly fee. Whether you need a fractional CTO or zero‑cash MVP build, Quadplan has you covered. Let’s talk about your vision and map out a winning strategy",
 };
@@ -53,13 +55,20 @@ const Hero = () => {
                 </motion.div>
 
                 {/* Button */}
-                <motion.button
-                    className="cursor-pointer px-6 h-16 bg-white rounded-full text-zinc-900 font-bold w-fit mx-auto"
-                    variants={childVariants}
-                    whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
+                <Link 
+                    href={heroItems.path} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="mx-auto w-fit"
                 >
-                    {heroItems.buttonText}
-                </motion.button>
+                    <motion.button
+                        className="cursor-pointer px-6 h-16 bg-white rounded-full text-zinc-900 font-bold w-fit"
+                        variants={childVariants}
+                        whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
+                    >
+                        {heroItems.buttonText}
+                    </motion.button>
+                </Link>
             </motion.div>
         </div>
     );

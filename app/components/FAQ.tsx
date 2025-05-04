@@ -27,6 +27,11 @@ const faqs = [
 			"We specialize in React, Next.js, Tailwind CSS, Node.js, and serverless architectures.",
 	},
 	{
+		question: "How do I apply for the Founder’s Deal?",
+		answer:
+			"Fill out the form on our Founder’s Deal page to apply and we will get back to you shortly.",
+	},
+	{
 		question: "How do I book a discovery call?",
 		answer:
 			"Click the “Book a Free Discovery Call” button in the header or footer and choose a time.",
@@ -83,7 +88,7 @@ const FAQSection = () => {
 											{faq.question}
 										</span>
 										<PlusIcon
-											className={`h-6 w-6 transform transition-transform duration-200 ${
+											className={`h-6 w-6 text-white transform transition-transform duration-200 ${
 												open ? "rotate-45" : ""
 											}`}
 										/>

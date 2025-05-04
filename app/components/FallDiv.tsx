@@ -17,7 +17,7 @@ const fdItems = {
 	buttonText: "Refer Us",
 	awards: [
 		{ name: "goodfirm", icon: "/assets/goodfirm.svg", text: "Top App Development Company", link: "https://goodfirm.com/company/quadplan" },
-		{ name: "fiverr", icon: "/assets/fiverr-icon.svg", text: "40+ Projects Devlivered", link: "https://fiverr.com/eze-trust" }
+		{ name: "fiverr", icon: "/assets/fiverr-icon.svg", text: "40+ Projects Devlivered", link: "https://fiverr.com/eze_trust" }
 	]
 
 };
@@ -83,18 +83,23 @@ const FallDiv = () => {
 					</h2>
 					<div className="w-full flex items-center space-x-8 pb-12">
 						{fdItems.awards.map((award, index) => (
-							<Link href={award.link} target="_blank" passHref key={index}>
-								<div className="w-36 lg:w-48 flex flex-col items-center justify-center space-y-4">
-									<img 
-										src={award.icon} 
-										alt={award.name} 
-										className="w-16 lg:w-40 h-auto" 
-									/>
-									<p className="text-white text-center text-sm lg:text-lg font-medium">
-										{award.text}
-									</p>
-								</div>
-							</Link>
+							<div 
+								key={index} 
+								className="w-fit"
+							>
+								<Link href={award.link} target="_blank">
+									<div className="w-36 lg:w-48 flex flex-col items-center justify-center space-y-4">
+										<img 
+											src={award.icon} 
+											alt={award.name} 
+											className="w-16 lg:w-40 h-auto" 
+										/>
+										<p className="text-white text-center text-sm lg:text-lg font-medium">
+											{award.text}
+										</p>
+									</div>
+								</Link>
+							</div>
 						))}
 					</div>
 				</div>

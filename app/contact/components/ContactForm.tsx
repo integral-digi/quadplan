@@ -47,7 +47,7 @@ const ContactForm = () => {
 		<div className="w-full rounded-2xl h-full bg-zinc-800/30 overflow-clip">
 			<div className="flex flex-col space-y-0 lg:flex-row w-full rounded-2xl h-full">
 				{/* Left Panel */}
-				<div className="w-full lg:w-full md:w-1/2 bg-red-500 p-8 md:p-12 min-h-[640px] relative overflow-clip">
+				<div className="w-full lg:w-1/2 bg-red-500 p-8 md:p-12 min-h-[640px] relative overflow-clip">
 					<div className="space-y-32">
 						<div className="space-y-4">
 							<h3 className="text-white text-3xl font-bold">{contactItems.title}</h3>
@@ -72,7 +72,7 @@ const ContactForm = () => {
 				</div>
 
 				{/* Right Panel */}
-				<form ref={formRef} onSubmit={handleSubmit} className="w-full md:w-1/2 p-8 md:p-12 space-y-8 relative">
+				<form ref={formRef} onSubmit={handleSubmit} className="w-full lg:w-1/2 p-8 md:p-12 space-y-8 relative">
 					{/* Name & Email */}
 					<div className="flex flex-col space-y-8 md:flex-row md:space-x-8">
 						<fieldset className="w-full md:w-1/2 space-y-2">

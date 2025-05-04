@@ -2,6 +2,7 @@
 import { CheckCircleIcon } from "@heroicons/react/24/solid";
 import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const proposalItems = {
 	title: "Your Technical Co‑Founder, On Demand",
@@ -12,6 +13,7 @@ const proposalItems = {
         "Trusted by 20+ funded startups and SMEs"
     ],
 	buttonText: "Schedule Call Now",
+	path: "https://calendly.com/hello-quadplan/30min",
 	firstImage: "/images/code.jpg",
 };
 
@@ -57,24 +59,28 @@ const Offer = () => {
                         ))}
 					</div>
 					<div className="flex items-center space-x-8">
-						<motion.button
-							className="bg-white h-12 pr-2 pl-4 cursor-pointer rounded-full flex justify-center"
-							whileHover={{
-								background:
-									"linear-gradient(0deg, rgba(0, 56, 255, 0.02) 0%, rgba(0, 56, 255, 0.02) 100%), #EF4136",
-								scale: 1.01,
-								transition: { duration: 0.3 }
-							}}
-						>
-							<div className="flex space-x-4 items-center w-full">
-								<p className="text-zinc-900 text-base font-medium text-nowrap">
-									{proposalItems.buttonText}
-								</p>
-								<div className="rounded-full h-8 w-8 bg-red-500 flex items-center justify-center">
-									<ArrowUpRightIcon className="w-4 h-4 text-white" />
+						<Link href={proposalItems.path} target="_blank" rel="noopener noreferrer">
+							<motion.button
+								className="bg-white h-12 pr-2 pl-4 cursor-pointer rounded-full flex justify-center"
+								whileHover={{
+									background:
+										"linear-gradient(0deg, rgba(0, 56, 255, 0.02) 0%, rgba(0, 56, 255, 0.02) 100%), #EF4136",
+									scale: 1.01,
+									transition: { duration: 0.3 }
+								}}
+							>
+								<div className="flex space-x-4 items-center w-full">
+									<p className="text-zinc-900 text-base font-medium text-nowrap">
+										{proposalItems.buttonText}
+									</p>
+									<div className="rounded-full h-8 w-8 bg-red-500 flex items-center justify-center">
+										<ArrowUpRightIcon className="w-4 h-4 text-white" />
+									</div>
 								</div>
-							</div>
-						</motion.button>
+							</motion.button>
+						</Link>
+						
+						{/* Refer us button */}
 						<motion.button
 							className="bg-transparent h-12 pr-2 pl-4 cursor-pointer rounded-full flex justify-center"
 							whileHover={{

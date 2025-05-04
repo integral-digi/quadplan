@@ -16,7 +16,7 @@ const ContentHome = () => {
 	const content = useContent();
 
 	if (!content || !content.items) {
-		return <section className="w-full bgzinc-900 h-full"><BlogPostSkeleton /></section>;
+		return <section className="w-full bg-zinc-900 h-full"><BlogPostSkeleton /></section>;
 	}
 
 	const { items } = content;

@@ -57,7 +57,7 @@ export default function RootLayout({
 			>
 				<ContentProvider>
 					{children}
-					<ChaportChat />
+					{/* <ChaportChat /> */}
 				</ContentProvider>
 			</body>
 		</html>

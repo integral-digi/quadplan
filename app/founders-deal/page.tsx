@@ -12,6 +12,7 @@ import Offer from "./components/Offer";
 import OurProductFade from "./components/OurProductFade";
 import OurProducts from "./components/OurProducts";
 import MobileNav from "../components/MobileNav";
+import Showcase from "../components/Showcase";
 
 const FounderHome = () => {
 	const pageUrl = "https://quadplan.co/founders-deal";
@@ -98,6 +99,7 @@ const FounderHome = () => {
 				<HomeNav />
 				<MobileNav />
 				<Hero />
+				<Showcase />
 				<section className="flex flex-col space-y-16 lg:flex-row items-center xl:-space-x-72 w-full px-4 lg:px-24">
 					<section className="space-y-16 w-full">
 						<OurProducts />
