@@ -72,7 +72,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 							/>
 
 							{/* Popover Panel */}
-							<div className="fixed top-0 left-0 h-full w-1/3 bg-zinc-800 shadow-2xl z-50 p-8 overflow-y-auto">
+							<div className="fixed top-0 left-0 h-full w-full lg:w-1/3 bg-zinc-800 shadow-2xl z-50 p-8 overflow-y-auto">
 								<div className="flex justify-between items-center mb-6">
 									<h2 className="text-xl font-bold text-white">Purchase {formData.plan}</h2>
 									<button onClick={() => setIsOpen(false)} className="text-white hover:text-orange-400">
