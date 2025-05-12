@@ -2,12 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ContentProvider } from "./context/ContentContext";
 import Script from "next/script";
-import { ChaportChat } from "./components/Chaport";
-
-export const metadata: Metadata = {
-	title: "Quadplan - Custom Software & Product Design for Ambitious Startups",
-	description: "We help startups build better products, faster. Full-stack design & development tailored to early-stage teams.",
-};
+import { ChaportChat } from "./components/Chaport;
 
 const ogImage = "/images/twitter-img.png"
 
@@ -20,8 +15,6 @@ export default function RootLayout({
 		<html lang="en">
 			<head>
 				{/* Open Graph */}
-				<meta property="og:title" content="Quadplan – Custom Software & Product Design for Startups" />
-				<meta property="og:description" content="Build better products, faster. Full‑stack design and development tailored for early‑stage teams." />
 				<meta property="og:url" content="https://www.quadplan.co/" />
 				<meta property="og:type" content="website" />
 				<meta property="og:image" content={ogImage} />
