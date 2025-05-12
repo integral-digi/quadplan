@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ContentProvider } from "./context/ContentContext";
 import Script from "next/script";
-import { ChaportChat } from "./components/Chaport;
 
 const ogImage = "/images/twitter-img.png"
 
@@ -50,7 +49,6 @@ export default function RootLayout({
 			>
 				<ContentProvider>
 					{children}
-					{/* <ChaportChat /> */}
 				</ContentProvider>
 			</body>
 		</html>
